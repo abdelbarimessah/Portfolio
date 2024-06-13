@@ -1,10 +1,15 @@
-
+'use client'
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 
 const NavBare = () => {
+  const path = usePathname();
+
+  console.log('path is : ', path)
+
     return (
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center justify-center z-50">
             <div className="h-[61px] w-[1024px]  flex items-center justify-between fixed top-0">
                 <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
                     <div className="relative w-[17px] h-[17px] flex items-center justify-center">
@@ -20,24 +25,24 @@ const NavBare = () => {
                     </span>
                 </div>
                 <div className="h-full flex items-center justify-center gap-[32px] ">
-                    <div className="h-full flex items-center justify-center cursor-pointer">
+                    <div className="h-full flex items-center justify-center cursor-pointer ">
                         <span className="font-fira-code font-medium text-[16px] text-color-2">#</span>
-                        <span className="font-fira-code font-medium text-[16px] text-color-3">home</span>
+                        <span className={`${path === '/home' ? 'text-color-0' : 'text-color-3'} hover:text-color-0 font-fira-code font-medium text-[16px]`}>home</span>
                     </div>
                     <div className="h-full flex items-center justify-center cursor-pointer">
                         <span className="font-fira-code font-medium text-[16px] text-color-2">#</span>
-                        <span className="font-fira-code font-medium text-[16px] text-color-3">works</span>
+                        <span className={`${path === '/works' ? 'text-color-0' : 'text-color-3'} hover:text-color-0 font-fira-code font-medium text-[16px]`}>works</span>
                     </div>
                     <div className="h-full flex items-center justify-center cursor-pointer">
                         <span className="font-fira-code font-medium text-[16px] text-color-2">#</span>
-                        <span className="font-fira-code font-medium text-[16px] text-color-3">about-me</span>
+                        <span className={`${path === '/about-me' ? 'text-color-0' : 'text-color-3'} hover:text-color-0 font-fira-code font-medium text-[16px]`}>about-me</span>
                     </div>
                     <div className="h-full flex items-center justify-center cursor-pointer">
                         <span className="font-fira-code font-medium text-[16px] text-color-2">#</span>
-                        <span className="font-fira-code font-medium text-[16px] text-color-3">contacts</span>
+                        <span className={`${path === '/contacts' ? 'text-color-0' : 'text-color-3'} hover:text-color-0 font-fira-code font-medium text-[16px]`}>contacts</span>
                     </div>
                     <div className="h-full flex items-center justify-center gap-1 cursor-pointer">
-                        <span className="font-fira-code font-medium text-[16px] text-color-3">EN</span>
+                        <span className="font-fira-code font-medium text-[16px] text-color-3 hover:text-color-0">EN</span>
                         <div className="relative w-[12px] h-[12px] flex items-center justify-center">
                             <Image
                                 src="./assets/arrowDown.svg"

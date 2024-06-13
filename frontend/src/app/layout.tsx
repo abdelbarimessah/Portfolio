@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="font-fira-code">
-      <body className='no-scrollbar'>
+      <body className="no-scrollbar overflow-x-hidden bg-color-1">
         {children}
       </body>
     </html>

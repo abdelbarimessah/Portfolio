@@ -9,13 +9,13 @@ export default function RootLayout({
 }) {
 
   return (
-    <div className="flex bg-color-1 flex-col w-screen min-h-screen">
-
-      <NavBare />
-      <LeftLine/>
+    <div className="flex bg-color-1 flex-col w-screen min-h-screen relative no-scrollbar">
+      <div className="flex items-center justify-center w-full absolute top-0">
+        <LeftLine />
+        <NavBare />
+      </div>
       {children}
-
     </div>
-  )
+  );
 
 }
