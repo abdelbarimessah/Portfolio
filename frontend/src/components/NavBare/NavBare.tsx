@@ -6,11 +6,9 @@ import { usePathname } from "next/navigation";
 const NavBare = () => {
   const path = usePathname();
 
-  console.log('path is : ', path)
-
     return (
-        <div className="w-full h-full flex items-center justify-center z-50">
-            <div className="h-[61px] w-[1024px]  flex items-center justify-between fixed top-0">
+        <div className="w-full h-full flex items-center justify-center z-50 ">
+            <div className="bg-color-1 h-[61px] w-[1024px]  flex items-center justify-between fixed top-0">
                 <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
                     <div className="relative w-[17px] h-[17px] flex items-center justify-center">
                         <Image

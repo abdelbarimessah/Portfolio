@@ -10,7 +10,7 @@ export default function RootLayout({
 
   return (
     <div className="flex bg-color-1 flex-col w-screen min-h-screen relative no-scrollbar">
-      <div className="flex items-center justify-center w-full absolute top-0">
+      <div className="flex items-center justify-center w-full absolute top-0 ">
         <LeftLine />
         <NavBare />
       </div>
