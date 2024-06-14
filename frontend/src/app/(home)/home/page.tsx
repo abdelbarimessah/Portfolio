@@ -10,7 +10,8 @@ function Home() {
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar">
       <ParticleBackground />
-      <div className="absolute w-[155px] h-[155px] border-t border-b border-l border-color-3 top-[75%] left-[97%]"></div>
+      <div className="absolute w-[91px] h-[91px] border border-color-3 left-[96%] top-[40%]"></div>
+      <div className="absolute w-[155px] h-[155px] border border-color-3 top-[75%] left-[97%]"></div>
       <div className=" absolute top-[50%] -left-8">
         <div className="w-[84px] h-[84px] flex items-center justify-center relative object-cover">
           <Image src={"./assets/dotedLeft.svg"} alt="arrow" fill={true}></Image>
@@ -69,7 +70,6 @@ function Home() {
         </div>
       </div>
       <div className="w-[1025px] relative flex flex-col items-center mb-[63px] justify-center">
-        <div className="absolute w-[91px] h-[91px] border-l border-t border-b border-color-3 -right-[435px] top-[30px]"></div>
         <div className="absolute w-[42px] h-[30px] bg-color-1 -top-4 left-[170px] flex items-center justify-center">
           <div className="relative w-[25px] h-[20px] flex items-center justify-center">
             <Image src={"./assets/quote.svg"} alt="quote" fill={true}></Image>
@@ -85,7 +85,7 @@ function Home() {
             Talk is cheap. Show me the code.
           </span>
         </div>
-        <div className="w-[162px] h-[63px] border-l border-r border-b border-color-3 absolute -bottom-[63px] right-[157px] flex items-center justify-center">
+        <div className="w-[162px] h-[63px] border-l border-r border-b  border-color-3 absolute -bottom-[63px] right-[157px] flex items-center justify-center">
           <span className="font-fira-code text-[14px] font-semibold">
             – Linus Torvalds
           </span>
@@ -143,8 +143,8 @@ function Home() {
                 </span>
               </div>
               <div className="w-full flex items-center  justify-start">
-                <div className="h-[37px] w-[109px] flex items-center justify-center border border-color-2">
-                  <span className="font-fira-code text-[16px] font-medium text-color-3">
+                <div className="h-[37px] w-[109px] flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                  <span className="font-fira-code text-[16px] font-medium text-color-3  ">
                     {"Live <~>"}
                   </span>
                 </div>
