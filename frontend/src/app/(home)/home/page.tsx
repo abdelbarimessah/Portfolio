@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { FlipWords } from "../../../components/ui/flip-words";
 import ParticleBackground from "@/components/Particles/Tspraticles";
-import { FollowerPointerCard } from "../..//../components/ui/following-pointer";
 
 function Home() {
   const words = ["Front-End", "Back-End"];
@@ -11,6 +10,12 @@ function Home() {
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar">
       <ParticleBackground />
+      <div className="absolute w-[155px] h-[155px] border-t border-b border-l border-color-3 top-[75%] left-[97%]"></div>
+      <div className=" absolute top-[50%] -left-8">
+        <div className="w-[84px] h-[84px] flex items-center justify-center relative object-cover">
+          <Image src={"./assets/dotedLeft.svg"} alt="arrow" fill={true}></Image>
+        </div>
+      </div>
       <div className="w-[1025px] h-[423px] relative  flex items-center justify-center">
         <div className="absolute top-[90px] left-[515px] z-0">
           <div className="relative w-[155px] h-[155px] flex items-center justify-center">
@@ -63,7 +68,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[1025px] relative flex flex-col items-center justify-center">
+      <div className="w-[1025px] relative flex flex-col items-center mb-[63px] justify-center">
         <div className="absolute w-[91px] h-[91px] border-l border-t border-b border-color-3 -right-[435px] top-[30px]"></div>
         <div className="absolute w-[42px] h-[30px] bg-color-1 -top-4 left-[170px] flex items-center justify-center">
           <div className="relative w-[25px] h-[20px] flex items-center justify-center">
@@ -86,7 +91,7 @@ function Home() {
           </span>
         </div>
       </div>
-      <div className="h-[518px] w-[1025px] flex items-center justify-center flex-col z-50">
+      <div className="h-[518px] w-[1025px] flex items-center justify-center flex-col z-50 gap-[50px] pb-10">
         <div className="w-full flex justify-between items-center">
           <div className="flex items-center justify-center gap-[16px]">
             <div className="flex  items-center justify-center">
@@ -100,7 +105,9 @@ function Home() {
             <div className="w-[511px] h-[1px] bg-color-2"></div>
           </div>
           <div className="flex items-center gap-[11px] justify-center cursor-pointer">
-            <span className="font-fira-code font-semibold text-[16px] ">View all</span>
+            <span className="font-fira-code font-semibold text-[16px] ">
+              View all
+            </span>
             <div className="relative  w-[20px] h-[25px] flex items-center justify-center">
               <Image
                 src={"./assets/arrowRight.svg"}
@@ -110,85 +117,46 @@ function Home() {
             </div>
           </div>
         </div>
-        <FollowingPointerDemo/>
+        <div className="w-full flex items-start justify-center gap-[16px]">
+          <div className="flex items-start justify-start flex-col w-[330px] h-[391px] border border-color-3">
+            <div className="w-full h-[201px] relative flex items-center justify-center object-cover">
+              <Image
+                src={"./assets/project1.svg"}
+                alt="project"
+                fill={true}
+              ></Image>
+            </div>
+            <div className="w-full px-4 py-2 border-b border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                HTML CSS JS NEXTJS
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                  ChertNodes
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  Minecraft servers hosting
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <div className="h-[37px] w-[109px] flex items-center justify-center border border-color-2">
+                  <span className="font-fira-code text-[16px] font-medium text-color-3">
+                    {"Live <~>"}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-[330px] h-[428px] border border-color-3"></div>
+          <div className="w-[330px] h-[422px] border border-color-3"></div>
+        </div>
       </div>
     </div>
   );
 }
-
-
-const blogContent = {
-  slug: "amazing-tailwindcss-grid-layouts",
-  author: "Manu Arora",
-  date: "28th March, 2023",
-  title: "Amazing Tailwindcss Grid Layout Examples",
-  description:
-    "Grids are cool, but Tailwindcss grids are cooler. In this article, we will learn how to create amazing Grid layouts with Tailwindcs grid and React.",
-  image: "./assets/Rectangle.png",
-  authorAvatar: "/manu.png",
-};
-
-const TitleComponent = ({
-  title,
-  avatar,
-}: {
-  title: string;
-  avatar: string;
-}) => (
-  <div className="flex space-x-2 items-center">
-    <Image
-      src={avatar}
-      height="20"
-      width="20"
-      alt="thumbnail"
-      className="rounded-full border-2 border-white"
-    />
-    <p>{title}</p>
-  </div>
-);
-
-export function FollowingPointerDemo() {
-  return (
-    <div className="w-80 mx-auto">
-      <FollowerPointerCard
-        title={
-          <TitleComponent
-            title={blogContent.author}
-            avatar={blogContent.authorAvatar}
-          />
-        }
-      >
-        <div className="relative overflow-hidden h-full rounded-2xl transition duration-200 group bg-white hover:shadow-xl border border-zinc-100">
-          <div className="w-full aspect-w-16 aspect-h-10 bg-gray-100 rounded-tr-lg rounded-tl-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative">
-            <Image
-              src={blogContent.image}
-              // src={"./assets/arrowRight.svg"}
-              alt="thumbnail"
-              layout="fill"
-              objectFit="cover"
-              className={`group-hover:scale-95 group-hover:rounded-2xl transform object-cover transition duration-200 `}
-            />
-          </div>
-          <div className=" p-4">
-            <h2 className="font-bold my-4 text-lg text-zinc-700">
-              {blogContent.title}
-            </h2>
-            <h2 className="font-normal my-4 text-sm text-zinc-500">
-              {blogContent.description}
-            </h2>
-            <div className="flex flex-row justify-between items-center mt-10">
-              <span className="text-sm text-gray-500">{blogContent.date}</span>
-              <div className="relative z-10 px-6 py-2 bg-black text-white font-bold rounded-xl block text-xs">
-                Read More
-              </div>
-            </div>
-          </div>
-        </div>
-      </FollowerPointerCard>
-    </div>
-  );
-}
-
-
 
 export default Home;
