@@ -4,6 +4,7 @@ import React from "react";
 import { FlipWords } from "../../../components/ui/flip-words";
 import ParticleBackground from "@/components/Particles/Tspraticles";
 import Footer from "@/components/Bares/Footer";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 function Home() {
   const words = ["Front-End", "Back-End", "Full-Stack"];
@@ -145,9 +146,12 @@ function Home() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <div className="h-[37px] w-[109px] flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
-                  <span className="font-fira-code text-[16px] font-medium text-color-3  ">
-                    {"Live <~>"}
-                  </span>
+                  <LinkPreview
+                    url="https://github.com/abdelbarimessah/ft_transcendence"
+                    className="font-fira-code text-[16px] font-medium text-color-3"
+                  >
+                    Link
+                  </LinkPreview>
                 </div>
               </div>
             </div>
