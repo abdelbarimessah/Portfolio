@@ -3,21 +3,22 @@ import Image from "next/image";
 import React from "react";
 import { FlipWords } from "../../../components/ui/flip-words";
 import ParticleBackground from "@/components/Particles/Tspraticles";
+import Footer from "@/components/Bares/Footer";
 
 function Home() {
-  const words = ["Front-End", "Back-End"];
+  const words = ["Front-End", "Back-End", "Full-Stack"];
 
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar">
       <ParticleBackground />
-      <div className="absolute w-[91px] h-[91px] border border-color-3 left-[96%] top-[40%]"></div>
-      <div className="absolute w-[155px] h-[155px] border border-color-3 top-[75%] left-[97%]"></div>
-      <div className=" absolute top-[50%] -left-8">
+      <div className="shap absolute w-[91px] h-[91px] border border-color-3 left-[96%] top-[40%]"></div>
+      <div className="shap absolute w-[155px] h-[155px] border border-color-3 top-[75%] left-[97%]"></div>
+      <div className="shap absolute top-[50%] -left-8">
         <div className="w-[84px] h-[84px] flex items-center justify-center relative object-cover">
           <Image src={"./assets/dotedLeft.svg"} alt="arrow" fill={true}></Image>
         </div>
       </div>
-      <div className="w-[1025px] h-[423px] relative  flex items-center justify-center">
+      <div className="shap w-[1025px] h-[423px] relative  flex items-center justify-center">
         <div className="absolute top-[90px] left-[515px] z-0">
           <div className="relative w-[155px] h-[155px] flex items-center justify-center">
             <Image src="./assets/rectangleLeft.svg" fill={true} alt=""></Image>
@@ -155,8 +156,197 @@ function Home() {
           <div className="w-[330px] h-[422px] border border-color-3"></div>
         </div>
       </div>
+      <div className="h-[251px] mb-10 w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
+        <div className="flex items-center justify-center gap-[16px]">
+          <div className="flex  items-center justify-center">
+            <span className="font-fira-code text-[32px] text-color-2 font-medium">
+              #
+            </span>
+            <span className="font-fira-code text-[32px] text-color-0 font-medium">
+              Skills
+            </span>
+          </div>
+          <div className="w-[511px] h-[1px] bg-color-2"></div>
+        </div>
+        <div className="w-full flex items-start justify-center gap-[16px] ">
+          <div className="w-[192px] h-[103px] border border-color-3 ">
+            <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
+              <span className="font-fira-code font-semibold text-[16px] ">
+                Language
+              </span>
+            </div>
+            <div className="px-3 font-fira-code text-[16px] text-color-3">
+              javascript lua
+            </div>
+          </div>
+          <div className="w-[192px] h-[103px] border border-color-3 ">
+            <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
+              <span className="font-fira-code font-semibold text-[16px] ">
+                Other
+              </span>
+            </div>
+          </div>
+          <div className="w-[192px] h-[161px] border border-color-3 ">
+            <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
+              <span className="font-fira-code font-semibold text-[16px] ">
+                Tools
+              </span>
+            </div>
+          </div>
+          <div className="w-[192px] h-[103px] border border-color-3 ">
+            <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
+              <span className="font-fira-code font-semibold text-[16px] ">
+                Databases
+              </span>
+            </div>
+          </div>
+          <div className="w-[192px] h-[132px] border border-color-3 ">
+            <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
+              <span className="font-fira-code font-semibold text-[16px] ">
+                Frameworks
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-[508px] w-[1025px]  flex flex-col items-start justify-start gap-[23px] ">
+        <div className="flex items-center justify-center gap-[16px]">
+          <div className="flex  items-center justify-center">
+            <span className="font-fira-code text-[32px] text-color-2 font-medium">
+              #
+            </span>
+            <span className="font-fira-code text-[32px] text-color-0 font-medium">
+              About-me
+            </span>
+          </div>
+          <div className="w-[320px] h-[1px] bg-color-2"></div>
+        </div>
+        <div className="w-full flex items-start justify-start">
+          <div className="h-full w-[515px] pb-24 gap-[27px] flex flex-col items-center justify-center">
+            <div className="w-full">
+              <p className="font-fira-code text-[16px] text-color-3">
+                Hello, i’m Elias!
+                <br /> <br />
+                I’m a self-taught front-end developer based in Kyiv, Ukraine. I
+                can develop responsive websites from scratch and raise them into
+                modern user-friendly web experiences.
+                <br /> <br />
+                Transforming my creativity and knowledge into a websites has
+                been my passion for over a year. I have been helping various
+                clients to establish their presence online. I always strive to
+                learn about the newest technologies and frameworks.
+              </p>
+            </div>
+            <div className="w-full flex items-start">
+              <div className="w-[148px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-center">
+                <span className="">Read more</span>
+                <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                  <Image
+                    src={"./assets/arrowRight.svg"}
+                    alt="arrow"
+                    fill={true}
+                  ></Image>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="h-full w-1 flex-1 pb-10 relative">
+            <div className="absolute h-[1px] w-[271px] bg-color-2 bottom-[37px] right-5"></div>
+            <div className="w-full h-full flex items-center justify-end">
+              <div className="w-[339px] h-[507px] mt-1 flex items-center justify-center relative object-cover">
+                <Image
+                  src={"./assets/manimage1.svg"}
+                  alt="arrow"
+                  fill={true}
+                ></Image>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-[1025px] h-[228px] flex flex-col items-start justify-center gap-[45px] mt-[112px] mb-20">
+        <div className="flex items-center justify-center gap-[16px]">
+          <div className="flex  items-center justify-center">
+            <span className="font-fira-code text-[32px] text-color-2 font-medium">
+              #
+            </span>
+            <span className="font-fira-code text-[32px] text-color-0 font-medium">
+              Contacts
+            </span>
+          </div>
+          <div className="w-[150px] h-[1px] bg-color-2"></div>
+        </div>
+        <div className="w-full flex items-center justify-between">
+          <div className="w-[505px] flex items-center justify-center">
+            <p className="font-fira-code text-[16px] font-medium text-color-3">
+              I’m interested in internship or job opportunities as a full-stack,
+              front-end, or back-end developer. However, if you have other
+              requests or questions, don’t hesitate to contact me.
+            </p>
+          </div>
+          <div className="w-[404px] h-[200px] flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
+            <div className="w-full flex items-center justify-center">
+              <span className="font-fira-code font-semibold text-[16px] text-color-0 ">
+                Message me here
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-center justify-center">
+              <div className="w-full flex gap-4  flex-col items-center justify-center">
+                <div className="w-full flex  items-center justify-start px-7 cursor-pointer gap-7">
+                  <div className="relative w-[25px] h-[25px] object-cover">
+                    <Image
+                      src={"./assets/mail1.svg"}
+                      alt="arrow"
+                      fill={true}
+                    ></Image>
+                  </div>
+                  <div className="">
+                    <span className="font-fira-code text-[16px] text-color-3">
+                      messahabdelbari1337@gmail.com
+                    </span>
+                  </div>
+                </div>
+                <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
+                  <div className="relative w-[25px] h-[25px] object-cover">
+                    <Image
+                      src={"./assets/phone.svg"}
+                      alt="arrow"
+                      fill={true}
+                    ></Image>
+                  </div>
+                  <div className="">
+                    <span className="font-fira-code text-[16px] text-color-3">
+                      +212 651-094250
+                    </span>
+                  </div>
+                </div>
+                <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
+                  <div className="relative w-[25px] h-[25px] object-cover">
+                    <Image
+                      src={"./assets/discord.svg"}
+                      alt="arrow"
+                      fill={true}
+                    ></Image>
+                  </div>
+                  <div className="">
+                    <span className="font-fira-code text-[16px] text-color-3">
+                      Abdelbari#3138
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
 
 export default Home;
+
+// add the footer to all the page
+// make the project section under the navbar in the time of the scroll
+// add the shapes in the home page
+// add the smouth scroll
