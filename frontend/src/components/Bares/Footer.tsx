@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="w-full h-[208px] bottom-0 flex items-center justify-center left-0 border-t-2 border-color-3">
-      <div className="h-[144px] w-[1025px] bg-color-31 flex flex-col items-center justify-between">
+    <div className="w-full h-[208px] bottom-0 flex items-center justify-center left-0 border-t-2 pt-10 pb-2 border-color-3 ">
+      <div className="h-full w-[1025px] flex flex-col items-center justify-between ">
         <div className="w-full h-[75px] flex items-start justify-between ">
           <div className="w-[346px] h-[58px] gap-[16px] flex flex-col items-start justify-start">
             <div className="flex justify-start items-center gap-[34px]">
@@ -16,7 +17,7 @@ function Footer() {
                 </span>
               </div>
               <span className="font-fira-code text-[16px] text-color-3">
-                messahabdelbari1337@gmail.com
+                abdelbari.messah.dev@gmail.com
               </span>
             </div>
             <div className="w-full flex items-start">
@@ -32,12 +33,24 @@ function Footer() {
               </span>
             </div>
             <div className="w-full flex items-center justify-center gap-2">
-              <div className="relative w-[32px] h-[32px] flex items-center hover:scale-90  cursor-pointer justify-center ">
-                <Image src="./assets/Github.svg" fill={true} alt=""></Image>
-              </div>
-              <div className="relative w-[32px] h-[32px] flex items-center justify-center cursor-pointer hover:scale-90 ">
-                <Image src="./assets/linkedin.svg" fill={true} alt=""></Image>
-              </div>
+              <Link target="_blank" href="https://github.com/abdelbarimessah">
+                <div className="relative w-[32px] h-[32px] flex items-center hover:scale-90  cursor-pointer justify-center ">
+                  <Image src="./assets/Github.svg" fill={true} alt=""></Image>
+                </div>
+              </Link>
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/abdelbari-messah-60841a232/"
+              >
+                <div className="relative w-[32px] h-[32px] flex items-center justify-center cursor-pointer hover:scale-90 ">
+                  <Image src="./assets/linkedin.svg" fill={true} alt=""></Image>
+                </div>
+              </Link>
+              <Link href={"mailto:abdelbari.messah.dev@gmail.com"}>
+                <div className="relative w-[32px] h-[32px] flex items-center justify-center cursor-pointer hover:scale-90 ">
+                  <Image src="./assets/mail.svg" fill={true} alt=""></Image>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

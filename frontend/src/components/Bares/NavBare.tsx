@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NavBare = () => {
@@ -17,54 +18,62 @@ const NavBare = () => {
           </span>
         </div>
         <div className="h-full flex items-center justify-center gap-[32px] ">
-          <div className="h-full flex items-center justify-center cursor-pointer ">
-            <span className="font-fira-code font-medium text-[16px] text-color-2">
-              #
-            </span>
-            <span
-              className={`${
-                path === "/home" ? "text-color-0" : "text-color-3"
-              } hover:text-color-0 font-fira-code font-medium text-[16px]`}
-            >
-              home
-            </span>
-          </div>
-          <div className="h-full flex items-center justify-center cursor-pointer">
-            <span className="font-fira-code font-medium text-[16px] text-color-2">
-              #
-            </span>
-            <span
-              className={`${
-                path === "/works" ? "text-color-0" : "text-color-3"
-              } hover:text-color-0 font-fira-code font-medium text-[16px]`}
-            >
-              works
-            </span>
-          </div>
-          <div className="h-full flex items-center justify-center cursor-pointer">
-            <span className="font-fira-code font-medium text-[16px] text-color-2">
-              #
-            </span>
-            <span
-              className={`${
-                path === "/about-me" ? "text-color-0" : "text-color-3"
-              } hover:text-color-0 font-fira-code font-medium text-[16px]`}
-            >
-              about-me
-            </span>
-          </div>
-          <div className="h-full flex items-center justify-center cursor-pointer">
-            <span className="font-fira-code font-medium text-[16px] text-color-2">
-              #
-            </span>
-            <span
-              className={`${
-                path === "/contacts" ? "text-color-0" : "text-color-3"
-              } hover:text-color-0 font-fira-code font-medium text-[16px]`}
-            >
-              contacts
-            </span>
-          </div>
+          <Link href={"/home"}>
+            <div className="h-full flex items-center justify-center cursor-pointer ">
+              <span className="font-fira-code font-medium text-[16px] text-color-2">
+                #
+              </span>
+              <span
+                className={`${
+                  path === "/home" ? "text-color-0" : "text-color-3"
+                } hover:text-color-0 font-fira-code font-medium text-[16px]`}
+              >
+                home
+              </span>
+            </div>
+          </Link>
+          <Link href={"/projects"}>
+            <div className="h-full flex items-center justify-center cursor-pointer">
+              <span className="font-fira-code font-medium text-[16px] text-color-2">
+                #
+              </span>
+              <span
+                className={`${
+                  path === "/projects" ? "text-color-0" : "text-color-3"
+                } hover:text-color-0 font-fira-code font-medium text-[16px]`}
+              >
+                projects
+              </span>
+            </div>
+          </Link>
+          <Link href={"/about"}>
+            <div className="h-full flex items-center justify-center cursor-pointer">
+              <span className="font-fira-code font-medium text-[16px] text-color-2">
+                #
+              </span>
+              <span
+                className={`${
+                  path === "/about-me" ? "text-color-0" : "text-color-3"
+                } hover:text-color-0 font-fira-code font-medium text-[16px]`}
+              >
+                about-me
+              </span>
+            </div>
+          </Link>
+          <Link href={"/contacts"}>
+            <div className="h-full flex items-center justify-center cursor-pointer">
+              <span className="font-fira-code font-medium text-[16px] text-color-2">
+                #
+              </span>
+              <span
+                className={`${
+                  path === "/contacts" ? "text-color-0" : "text-color-3"
+                } hover:text-color-0 font-fira-code font-medium text-[16px]`}
+              >
+                contacts
+              </span>
+            </div>
+          </Link>
           <div className="h-full flex items-center justify-center gap-1 cursor-pointer">
             <span className="font-fira-code font-medium text-[16px] text-color-3 hover:text-color-0">
               EN

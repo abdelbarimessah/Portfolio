@@ -4,6 +4,9 @@ const nextConfig = {
         remotePatterns: [
           { hostname: "localhost" },
           { hostname: "api.microlink.io" },
+          { hostname: "images.unsplash.com" },
+
+          
         ],
       },
 };
