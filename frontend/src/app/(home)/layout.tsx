@@ -1,6 +1,6 @@
-import Footer from "@/components/Bares/Footer";
 import LeftLine from "@/components/Bares/LeftLine";
 import NavBare from "@/components/Bares/NavBare";
+import ParticleBackground from "@/components/Particles/Tspraticles";
 
 export default function RootLayout({
   children,
@@ -13,6 +13,8 @@ export default function RootLayout({
         <LeftLine />
         <NavBare />
       </div>
+  
+      <ParticleBackground />
       {children}
     </div>
   );

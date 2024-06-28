@@ -2,15 +2,21 @@
 import Image from "next/image";
 import React from "react";
 import { FlipWords } from "../../../components/ui/flip-words";
-import ParticleBackground from "@/components/Particles/Tspraticles";
 import Footer from "@/components/Bares/Footer";
+import { LinkPreview } from "@/components/ui/link-preview";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Link from "next/link";
+
 
 function Home() {
-  const words = ["Front-End", "Back-End", "Full-Stack"];
+  const word = ["Front-End", "Back-End", "Full-Stack"];
+  const words = ` I’m interested in internship or job opportunities as a full-stack,
+  front-end, or back-end developer. However, if you have other
+  requests or questions, don’t hesitate to contact me.`;
+
 
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar">
-      <ParticleBackground />
       <div className="shap absolute w-[91px] h-[91px] border border-color-3 left-[96%] top-[40%]"></div>
       <div className="shap absolute w-[155px] h-[155px] border border-color-3 top-[75%] left-[97%]"></div>
       <div className="shap absolute top-[50%] -left-8">
@@ -37,7 +43,7 @@ function Home() {
               </span>
               <FlipWords
                 className="font-fira-code text-[25px] font-semibold text-color-2"
-                words={words}
+                words={word}
               />
               <br />
             </div>
@@ -144,11 +150,21 @@ function Home() {
                 </span>
               </div>
               <div className="w-full flex items-center  justify-start">
-                <div className="h-[37px] w-[109px] flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
-                  <span className="font-fira-code text-[16px] font-medium text-color-3  ">
-                    {"Live <~>"}
-                  </span>
-                </div>
+                <LinkPreview
+                  url="https://www.youtube.com/"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
               </div>
             </div>
           </div>
@@ -237,17 +253,34 @@ function Home() {
                 learn about the newest technologies and frameworks.
               </p>
             </div>
-            <div className="w-full flex items-start">
-              <div className="w-[148px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-center">
-                <span className="">Read more</span>
-                <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
-                  <Image
-                    src={"./assets/arrowRight.svg"}
-                    alt="arrow"
-                    fill={true}
-                  ></Image>
+            <div className="w-full flex items-start gap-12">
+              <Link href="/about">
+                <div className="w-[148px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-center">
+                  <span className="">Read more</span>
+                  <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                    <Image
+                      src={"./assets/arrowRight.svg"}
+                      alt="arrow"
+                      fill={true}
+                    ></Image>
+                  </div>
                 </div>
-              </div>
+              </Link>
+              <a
+                href={"http://localhost:8000/assets/messah-fr.pdf"}
+                target="_blank"
+              >
+                <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-center">
+                  <span className="">Download CV</span>
+                  <div className="w-[15px] h-[15px] flex items-center justify-center relative object-cover">
+                    <Image
+                      src={"./assets/download.svg"}
+                      alt="arrow"
+                      fill={true}
+                    ></Image>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <div className="h-full w-1 flex-1 pb-10 relative">
@@ -276,13 +309,9 @@ function Home() {
           </div>
           <div className="w-[150px] h-[1px] bg-color-2"></div>
         </div>
-        <div className="w-full flex items-center justify-between">
-          <div className="w-[505px] flex items-center justify-center">
-            <p className="font-fira-code text-[16px] font-medium text-color-3">
-              I’m interested in internship or job opportunities as a full-stack,
-              front-end, or back-end developer. However, if you have other
-              requests or questions, don’t hesitate to contact me.
-            </p>
+        <div className="w-full flex items-start justify-between ">
+          <div className="w-[505px] flex items-center justify-center ">
+            <TextGenerateEffect words={words} />
           </div>
           <div className="w-[404px] h-[200px] flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
             <div className="w-full flex items-center justify-center">
@@ -302,7 +331,7 @@ function Home() {
                   </div>
                   <div className="">
                     <span className="font-fira-code text-[16px] text-color-3">
-                      messahabdelbari1337@gmail.com
+                      abdelbari.messah.dev@gmail.com
                     </span>
                   </div>
                 </div>
@@ -346,7 +375,12 @@ function Home() {
 
 export default Home;
 
-// add the footer to all the page
-// make the project section under the navbar in the time of the scroll
-// add the shapes in the home page
-// add the smouth scroll
+// TODO add the about page 
+// TODO add the contacts page and the content 
+// TODO add the shapes in the home page
+// TODO add the skills content
+// TODO add the project content
+// TODO add a bento grid to add the number of project the years of experience and 
+// TODO add a time line in the of the study in the about section 
+
+
