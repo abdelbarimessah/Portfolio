@@ -250,7 +250,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="w-[1025px] h-[828px] flex flex-col items-start justify-start gap-12 mb-20">
+      <div className=" w-[1025px] h-[600px] flex flex-col items-start justify-start gap-12 mb-20">
         <div className="w-full flex  items-start justify-start">
           <span className="font-fira-code font-semibold text-[32px] text-color-2">
             #
@@ -268,9 +268,6 @@ export default function Projects() {
   );
 }
 
-
-
-
 export function CardHoverEffectDemo() {
   return (
     <div className="max-w-5xl mx-auto px-8">
@@ -281,44 +278,39 @@ export function CardHoverEffectDemo() {
 export const projects = [
   {
     title: "Stripe",
-    description:
-      "A technology company that builds economic ",
+    description: "A technology company that builds economic ",
     link: "https://stripe.com",
-    tags: "html , css , javsc"  
+    tags: "html , css , javsc",
   },
   {
     title: "Netflix",
     description:
-    "A streaming service that offers a wide variet nected devices.",
+      "A streaming service that offers a wide variet nected devices.",
     link: "https://netflix.com",
-    tags: "html , css , javsc"  
+    tags: "html , css , javsc",
   },
   {
     title: "Google",
-    description:
-    "A multinational technology company that.",
+    description: "A multinational technology company that.",
     link: "https://google.com",
-    tags: "html , css , javsc"  
+    tags: "html , css , javsc",
   },
   {
     title: "Meta",
-    description:
-    "A multinational technology company that.",
+    description: "A multinational technology company that.",
     link: "https://meta.com",
-    tags: "html , css , javsc"  
+    tags: "html , css , javsc",
   },
   {
     title: "Amazon",
-    description:
-    "A multinational technology company .",
+    description: "A multinational technology company .",
     link: "https://amazon.com",
-    tags: "html , css , javsc"  
+    tags: "html , css , javsc",
   },
   {
     title: "Microsoft",
-    description:
-    "A multinational technology company  and related services.",
+    description: "A multinational technology company  and related services.",
     link: "https://microsoft.com",
-    tags: "html , css , javsc"  
+    tags: "html , css , javsc",
   },
 ];
