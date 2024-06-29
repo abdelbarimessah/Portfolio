@@ -23,9 +23,9 @@ function Home() {
         </div>
       </div>
       <div className="shap w-[1025px] h-[423px] relative  flex items-center justify-center">
-        <div className="absolute top-[90px] left-[515px] z-0">
+        <div className="absolute top-[90px] left-[525px] z-0">
           <div className="relative w-[155px] h-[155px] flex items-center justify-center">
-            <Image src="./assets/rectangleLeft.svg" fill={true} alt=""></Image>
+            <Image src="./assets/rectangleLeftNew.svg" fill={true} alt=""></Image>
           </div>
         </div>
         <div className="absolute top-[300px] left-[870px] z-50">
@@ -37,7 +37,7 @@ function Home() {
           <div className="w-full h-[84px] ">
             <div className="w-full">
               <span className="font-fira-code text-[25px] font-semibold text-color-0">
-                I m Abdelbari MESSAH
+                I m Abdelbari Messah
               </span>
               <FlipWords
                 className="font-fira-code text-[25px] font-semibold text-color-2"
@@ -71,6 +71,17 @@ function Home() {
         <div className=" h-full w-[492px]">
           <div className="relative w-[457px] h-[386px] flex items-center justify-center z-10">
             <Image src="./assets/manImage.svg" fill={true} alt=""></Image>
+          </div>
+        </div>
+
+        <div className=" absolute bottom-0  flex left-[553px]">
+          <div className="h-[37px] w-[402px] absolute bottom-0  flex items-center justify-start px-3 gap-[16px] border border-color-2">
+            <div className="w-4 h-4 bg-color-2">
+            </div>
+            <div className="flex gap-[10px] items-center justify-center">
+              <span className="font-fira-code font-medium text-[16px] text-color-3">Currently working on</span>
+              <span className="font-fira-code font-semibold text-[16px] text-color-0">Portfolio</span>
+            </div>
           </div>
         </div>
       </div>
@@ -429,7 +440,5 @@ function Home() {
 
 export default Home;
 
-// TODO add the about page
-// TODO add the contacts page and the content
 // TODO add the shapes in the home page
 // TODO add the project content

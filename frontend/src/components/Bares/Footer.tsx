@@ -10,7 +10,7 @@ function Footer() {
             <div className="flex justify-start items-center gap-[34px]">
               <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
                 <div className="relative w-[28px] h-[28px] flex items-center justify-center">
-                  <Image src="./assets/LogoPer.svg" fill={true} alt=""></Image>
+                  <Image src="./assets/LogoPerNew.svg" fill={true} alt=""></Image>
                 </div>
                 <span className="font-fira-code font-semibold tracking-wider text-[16px] capitalize text-color-2">
                   Abdelbari

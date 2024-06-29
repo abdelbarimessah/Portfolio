@@ -23,7 +23,7 @@ const tsParticlesConfig = {
     },
     particles: {
       color: {
-        value: "#C778DD"
+        value: "#92b9d5"
       },
       links: {
         blink: false,
