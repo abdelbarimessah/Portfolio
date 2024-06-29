@@ -7,13 +7,11 @@ import { LinkPreview } from "@/components/ui/link-preview";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Link from "next/link";
 
-
 function Home() {
   const word = ["Front-End", "Back-End", "Full-Stack"];
   const words = ` I’m interested in internship or job opportunities as a full-stack,
   front-end, or back-end developer. However, if you have other
   requests or questions, don’t hesitate to contact me.`;
-
 
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar">
@@ -39,7 +37,7 @@ function Home() {
           <div className="w-full h-[84px] ">
             <div className="w-full">
               <span className="font-fira-code text-[25px] font-semibold text-color-0">
-                I m abdelbari Messah
+                I m Abdelbari MESSAH
               </span>
               <FlipWords
                 className="font-fira-code text-[25px] font-semibold text-color-2"
@@ -112,9 +110,11 @@ function Home() {
             <div className="w-[511px] h-[1px] bg-color-2"></div>
           </div>
           <div className="flex items-center gap-[11px] justify-center cursor-pointer">
-            <span className="font-fira-code font-semibold text-[16px] ">
-              View all
-            </span>
+            <Link href={"/projects"}>
+              <span className="font-fira-code font-semibold text-[16px] ">
+                View all
+              </span>
+            </Link>
             <div className="relative  w-[20px] h-[25px] flex items-center justify-center">
               <Image
                 src={"./assets/arrowRight.svg"}
@@ -185,41 +185,96 @@ function Home() {
           <div className="w-[511px] h-[1px] bg-color-2"></div>
         </div>
         <div className="w-full flex items-start justify-center gap-[16px] ">
-          <div className="w-[192px] h-[103px] border border-color-3 ">
+          <div className="w-[192px] h-[125px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
                 Language
               </span>
             </div>
-            <div className="px-3 font-fira-code text-[16px] text-color-3">
-              javascript lua
+            <div className=" w-full px-2 pt-2 flex flex-col items-start justify-center ">
+              <span className="font-fira-code text-[16px] text-color-3">
+                javascript
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                typescript
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                C/C++
+              </span>
             </div>
           </div>
-          <div className="w-[192px] h-[103px] border border-color-3 ">
+          <div className="w-[192px] h-[100px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
                 Other
               </span>
             </div>
+            <div className=" w-full px-2 pt-2 flex flex-col items-start justify-center ">
+              <span className="font-fira-code text-[16px] text-color-3">
+                Html / Css
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                Tailwind
+              </span>
+            </div>
           </div>
-          <div className="w-[192px] h-[161px] border border-color-3 ">
+          <div className="w-[192px] h-[150px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
                 Tools
               </span>
             </div>
+            <div className=" w-full px-2 pt-2 flex flex-col items-start justify-center ">
+              <span className="font-fira-code text-[16px] text-color-3">
+                Git/Github
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                CI/CD
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                Docker
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                Docker Compose
+              </span>
+            </div>
           </div>
-          <div className="w-[192px] h-[103px] border border-color-3 ">
+          <div className="w-[192px] h-[125px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
                 Databases
               </span>
             </div>
+            <div className=" w-full px-2 pt-2 flex flex-col items-start justify-center ">
+              <span className="font-fira-code text-[16px] text-color-3">
+                MySQL
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                PostgreSQL
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                MariaDB
+              </span>
+            </div>
           </div>
-          <div className="w-[192px] h-[132px] border border-color-3 ">
+          <div className="w-[192px] h-[150px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
                 Frameworks
+              </span>
+            </div>
+            <div className=" w-full px-2 pt-2 flex flex-col items-start justify-center ">
+              <span className="font-fira-code text-[16px] text-color-3">
+                NextJs
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                ReactJs
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                NodeJs
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                NestJs
               </span>
             </div>
           </div>
@@ -241,16 +296,15 @@ function Home() {
           <div className="h-full w-[515px] pb-24 gap-[27px] flex flex-col items-center justify-center">
             <div className="w-full">
               <p className="font-fira-code text-[16px] text-color-3">
-                Hello, i’m Elias!
+                Hello, i’m Abdelbari MESSAH
                 <br /> <br />
-                I’m a self-taught front-end developer based in Kyiv, Ukraine. I
-                can develop responsive websites from scratch and raise them into
-                modern user-friendly web experiences.
+                I m Entry-Level Software Engineer with a passion for software
+                development, Front-End and Back-End development and a strong
+                foundation in computer science fundamentals.
                 <br /> <br />
-                Transforming my creativity and knowledge into a websites has
-                been my passion for over a year. I have been helping various
-                clients to establish their presence online. I always strive to
-                learn about the newest technologies and frameworks.
+                Eager to leverage problem-solving skills and technical expertise
+                in a fast-paced professional environment to contribute to the
+                development of innovative software solutions.
               </p>
             </div>
             <div className="w-full flex items-start gap-12">
@@ -310,7 +364,7 @@ function Home() {
           <div className="w-[150px] h-[1px] bg-color-2"></div>
         </div>
         <div className="w-full flex items-start justify-between ">
-          <div className="w-[505px] flex items-center justify-center ">
+          <div className="w-[505px] h-full flex items-center justify-center ">
             <TextGenerateEffect words={words} />
           </div>
           <div className="w-[404px] h-[200px] flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
@@ -375,12 +429,7 @@ function Home() {
 
 export default Home;
 
-// TODO add the about page 
-// TODO add the contacts page and the content 
+// TODO add the about page
+// TODO add the contacts page and the content
 // TODO add the shapes in the home page
-// TODO add the skills content
 // TODO add the project content
-// TODO add a bento grid to add the number of project the years of experience and 
-// TODO add a time line in the of the study in the about section 
-
-
