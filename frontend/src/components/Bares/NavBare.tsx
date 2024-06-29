@@ -53,27 +53,14 @@ const NavBare = () => {
               </span>
               <span
                 className={`${
-                  path === "/about-me" ? "text-color-0" : "text-color-3"
+                  path === "/about" ? "text-color-0" : "text-color-3"
                 } hover:text-color-0 font-fira-code font-medium text-[16px]`}
               >
                 about-me
               </span>
             </div>
           </Link>
-          <Link href={"/contacts"}>
-            <div className="h-full flex items-center justify-center cursor-pointer">
-              <span className="font-fira-code font-medium text-[16px] text-color-2">
-                #
-              </span>
-              <span
-                className={`${
-                  path === "/contacts" ? "text-color-0" : "text-color-3"
-                } hover:text-color-0 font-fira-code font-medium text-[16px]`}
-              >
-                contacts
-              </span>
-            </div>
-          </Link>
+          
           <div className="h-full flex items-center justify-center gap-1 cursor-pointer">
             <span className="font-fira-code font-medium text-[16px] text-color-3 hover:text-color-0">
               EN
@@ -89,3 +76,6 @@ const NavBare = () => {
 };
 
 export default NavBare;
+
+
+
