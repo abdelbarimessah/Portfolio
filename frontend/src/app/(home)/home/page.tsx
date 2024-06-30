@@ -25,7 +25,11 @@ function Home() {
       <div className="shap w-[1025px] h-[423px] relative  flex items-center justify-center">
         <div className="absolute top-[90px] left-[525px] z-0">
           <div className="relative w-[155px] h-[155px] flex items-center justify-center">
-            <Image src="./assets/rectangleLeftNew.svg" fill={true} alt=""></Image>
+            <Image
+              src="./assets/rectangleLeftNew.svg"
+              fill={true}
+              alt=""
+            ></Image>
           </div>
         </div>
         <div className="absolute top-[300px] left-[870px] z-50">
@@ -61,11 +65,13 @@ function Home() {
             </span>
           </div>
           <div className="w-full flex items-center justify-start">
-            <div className="h-[37px] w-[148px] flex items-center justify-center border border-color-2 hover:border-color-3 cursor-pointer">
-              <span className="font-fira-code text-[14px] text-color-0 font-medium">
-                Contact me !!
-              </span>
-            </div>
+            <a href="#contacts">
+              <div className="h-[37px] w-[148px] flex items-center justify-center border border-color-2 hover:border-color-3 cursor-pointer">
+                <span className="font-fira-code text-[14px] text-color-0 font-medium">
+                  Contact me !!
+                </span>
+              </div>
+            </a>
           </div>
         </div>
         <div className=" h-full w-[492px]">
@@ -76,11 +82,14 @@ function Home() {
 
         <div className=" absolute bottom-0  flex left-[553px]">
           <div className="h-[37px] w-[402px] absolute bottom-0  flex items-center justify-start px-3 gap-[16px] border border-color-2">
-            <div className="w-4 h-4 bg-color-2">
-            </div>
+            <div className="w-4 h-4 bg-color-2"></div>
             <div className="flex gap-[10px] items-center justify-center">
-              <span className="font-fira-code font-medium text-[16px] text-color-3">Currently working on</span>
-              <span className="font-fira-code font-semibold text-[16px] text-color-0">Portfolio</span>
+              <span className="font-fira-code font-medium text-[16px] text-color-3">
+                Currently working on
+              </span>
+              <span className="font-fira-code font-semibold text-[16px] text-color-0">
+                Portfolio
+              </span>
             </div>
           </div>
         </div>
@@ -136,28 +145,28 @@ function Home() {
           </div>
         </div>
         <div className="w-full flex items-start justify-center gap-[16px]">
-          <div className="flex items-start justify-start flex-col w-[330px] h-[391px] border border-color-3">
-            <div className="w-full h-[201px] relative flex items-center justify-center object-cover">
+          <div className="flex items-start justify-start flex-col w-[330px] h-[440px] border border-color-3">
+            <div className="w-full h-[190px] border-b border-color-3 relative flex items-center justify-center object-cover">
               <Image
-                src={"./assets/project1.svg"}
+                src={"./assets/trans.svg"}
                 alt="project"
                 fill={true}
               ></Image>
             </div>
             <div className="w-full px-4 py-2 border-b border-color-3">
               <span className="font-fira-code text-[16px] text-color-3">
-                HTML CSS JS NEXTJS
+                NestJs NextJS Typescript Tailwind PosgreSQL Socket.IO Shadcn/ui
               </span>
             </div>
             <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
               <div className="w-full flex items-center justify-start">
                 <span className="font-fira-code text-color-0 text-[24px] font-medium">
-                  ChertNodes
+                  PONG MASTER
                 </span>
               </div>
               <div className="w-full flex items-center justify-start">
                 <span className="font-fira-code text-color-3 text-[16px]">
-                  Minecraft servers hosting
+                  Web Application
                 </span>
               </div>
               <div className="w-full flex items-center  justify-start">
@@ -179,8 +188,90 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[330px] h-[428px] border border-color-3"></div>
-          <div className="w-[330px] h-[422px] border border-color-3"></div>
+          <div className="flex items-start justify-start flex-col w-[330px] h-[391px] border border-color-3">
+            <div className="w-full bg-slate-600 h-[190px] border-b border-color-3 relative flex items-center justify-center object-cover">
+              {/* <Image
+                src={"./assets/irc.png"}
+                alt="project"
+                fill={true}
+              ></Image> */}
+              <img src="./assets/irc.png" alt="" />
+            </div>
+            <div className="w-full px-4 py-2 border-b border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                C/C++ Socket OOP
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                  IRC SERVER
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  Internet Relay Chat
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <LinkPreview
+                  url="https://www.youtube.com/"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-start justify-start flex-col w-[330px] h-[422px] border border-color-3">
+            <div className="w-full h-[185px] border-b border-color-3 relative  flex items-center justify-center object-cover">
+
+              <img src="./assets/inception.png" alt="" />
+            </div>
+            <div className="w-full px-4 py-2 border-b  border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                Docker Docker-Compose Virtual Machines
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                  INCEPTION
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  System Administartion
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <LinkPreview
+                  url="https://www.youtube.com/"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="h-[251px] mb-10 w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
@@ -362,77 +453,82 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[1025px] h-[228px] flex flex-col items-start justify-center gap-[45px] mt-[112px] mb-20">
-        <div className="flex items-center justify-center gap-[16px]">
-          <div className="flex  items-center justify-center">
-            <span className="font-fira-code text-[32px] text-color-2 font-medium">
-              #
-            </span>
-            <span className="font-fira-code text-[32px] text-color-0 font-medium">
-              Contacts
-            </span>
-          </div>
-          <div className="w-[150px] h-[1px] bg-color-2"></div>
-        </div>
-        <div className="w-full flex items-start justify-between ">
-          <div className="w-[505px] h-full flex items-center justify-center ">
-            <TextGenerateEffect words={words} />
-          </div>
-          <div className="w-[404px] h-[200px] flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
-            <div className="w-full flex items-center justify-center">
-              <span className="font-fira-code font-semibold text-[16px] text-color-0 ">
-                Message me here
+      <section
+        id="con
+      tacts"
+      >
+        <div className="w-[1025px] h-[228px] flex flex-col items-start justify-center gap-[45px] mt-[112px] mb-20">
+          <div className="flex items-center justify-center gap-[16px]">
+            <div className="flex  items-center justify-center">
+              <span className="font-fira-code text-[32px] text-color-2 font-medium">
+                #
+              </span>
+              <span className="font-fira-code text-[32px] text-color-0 font-medium">
+                Contacts
               </span>
             </div>
-            <div className="w-full flex flex-col items-center justify-center">
-              <div className="w-full flex gap-4  flex-col items-center justify-center">
-                <div className="w-full flex  items-center justify-start px-7 cursor-pointer gap-7">
-                  <div className="relative w-[25px] h-[25px] object-cover">
-                    <Image
-                      src={"./assets/mail1.svg"}
-                      alt="arrow"
-                      fill={true}
-                    ></Image>
+            <div className="w-[150px] h-[1px] bg-color-2"></div>
+          </div>
+          <div className="w-full flex items-start justify-between ">
+            <div className="w-[505px] h-full flex items-center justify-center ">
+              <TextGenerateEffect words={words} />
+            </div>
+            <div className="w-[404px] h-[200px] flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
+              <div className="w-full flex items-center justify-center">
+                <span className="font-fira-code font-semibold text-[16px] text-color-0 ">
+                  Message me here
+                </span>
+              </div>
+              <div className="w-full flex flex-col items-center justify-center">
+                <div className="w-full flex gap-4  flex-col items-center justify-center">
+                  <div className="w-full flex  items-center justify-start px-7 cursor-pointer gap-7">
+                    <div className="relative w-[25px] h-[25px] object-cover">
+                      <Image
+                        src={"./assets/mail1.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                    <div className="">
+                      <span className="font-fira-code text-[16px] text-color-3">
+                        abdelbari.messah.dev@gmail.com
+                      </span>
+                    </div>
                   </div>
-                  <div className="">
-                    <span className="font-fira-code text-[16px] text-color-3">
-                      abdelbari.messah.dev@gmail.com
-                    </span>
+                  <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
+                    <div className="relative w-[25px] h-[25px] object-cover">
+                      <Image
+                        src={"./assets/phone.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                    <div className="">
+                      <span className="font-fira-code text-[16px] text-color-3">
+                        +212 651-094250
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
-                  <div className="relative w-[25px] h-[25px] object-cover">
-                    <Image
-                      src={"./assets/phone.svg"}
-                      alt="arrow"
-                      fill={true}
-                    ></Image>
-                  </div>
-                  <div className="">
-                    <span className="font-fira-code text-[16px] text-color-3">
-                      +212 651-094250
-                    </span>
-                  </div>
-                </div>
-                <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
-                  <div className="relative w-[25px] h-[25px] object-cover">
-                    <Image
-                      src={"./assets/discord.svg"}
-                      alt="arrow"
-                      fill={true}
-                    ></Image>
-                  </div>
-                  <div className="">
-                    <span className="font-fira-code text-[16px] text-color-3">
-                      Abdelbari#3138
-                    </span>
+                  <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
+                    <div className="relative w-[25px] h-[25px] object-cover">
+                      <Image
+                        src={"./assets/discord.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                    <div className="">
+                      <span className="font-fira-code text-[16px] text-color-3">
+                        Abdelbari#3138
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <Footer />
     </div>
   );
@@ -441,4 +537,5 @@ function Home() {
 export default Home;
 
 // TODO add the shapes in the home page
-// TODO add the project content
+// TODO add the project images and the url of each one
+// TODO make the home page responsive
