@@ -171,7 +171,7 @@ function Home() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://github.com/abdelbarimessah/ft_transcendence"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -190,11 +190,6 @@ function Home() {
           </div>
           <div className="flex items-start justify-start flex-col w-[330px] h-[391px] border border-color-3">
             <div className="w-full bg-slate-600 h-[190px] border-b border-color-3 relative flex items-center justify-center object-cover">
-              {/* <Image
-                src={"./assets/irc.png"}
-                alt="project"
-                fill={true}
-              ></Image> */}
               <img src="./assets/irc.png" alt="" />
             </div>
             <div className="w-full px-4 py-2 border-b border-color-3">
@@ -215,7 +210,7 @@ function Home() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://github.com/abdelhamidbouazi/ft_irc"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -234,7 +229,6 @@ function Home() {
           </div>
           <div className="flex items-start justify-start flex-col w-[330px] h-[422px] border border-color-3">
             <div className="w-full h-[185px] border-b border-color-3 relative  flex items-center justify-center object-cover">
-
               <img src="./assets/inception.png" alt="" />
             </div>
             <div className="w-full px-4 py-2 border-b  border-color-3">
@@ -255,7 +249,7 @@ function Home() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://github.com/abdelbarimessah/inception"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -453,10 +447,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <section
-        id="con
-      tacts"
-      >
+      <section id="contacts">
         <div className="w-[1025px] h-[228px] flex flex-col items-start justify-center gap-[45px] mt-[112px] mb-20">
           <div className="flex items-center justify-center gap-[16px]">
             <div className="flex  items-center justify-center">

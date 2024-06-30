@@ -3,7 +3,49 @@ import Footer from "@/components/Bares/Footer";
 import { LinkPreview } from "@/components/ui/link-preview";
 import Image from "next/image";
 
-export default function Projects() {
+
+
+// export {pro}
+const  Projects = () => {
+  const pro = [
+    {
+      title: "Philosophers",
+      description: "Solve The Dining Philosophers Problem ",
+      link: "https://github.com/abdelbarimessah/Philosophers",
+      tags: "C Language, Mutex, Semaphore",
+    },
+    {
+      title: "NET PRACTICE",
+      description: "Project To Dicover The Networking And The Subnetting",
+      link: "https://github.com/abdelbarimessah/net-practice-42-",
+      tags: "Subnetting, TCP/UDP, IPV4/IPV6",
+    },
+    {
+      title: "PUSH SWAP",
+      description: "Approaches For Data Manipulation And Organization",
+      link: "https://github.com/abdelbarimessah/pushswap",
+      tags: "C Language, Linked List",
+    },
+    {
+      title: "SO LONG",
+      description: "2D Game Inspired By The Packman Game",
+      link: "https://github.com/abdelbarimessah/so_long",
+      tags: "C Language, Minilibx",
+    },
+    {
+      title: "FT_PTINTF",
+      description:
+        "This Project Is A Recode Of The printf() C Function",
+      link: "https://github.com/abdelbarimessah/ft_printf",
+      tags: "C Language, Variadic functions",
+    },
+    {
+      title: "LIBFT",
+      description: "This Project Is About Coding a C Library",
+      link: "https://github.com/abdelbarimessah/libft",
+      tags: "C Language",
+    },
+  ];
   return (
     <div className=" h-full w-full flex flex-col gap-[120px] items-center justify-center top-[123px] relative no-scrollbar">
       <div className=" w-[1025px] h-[77px] flex items-start justify-start">
@@ -60,7 +102,7 @@ export default function Projects() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://github.com/abdelbarimessah/ft_transcendence"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -99,7 +141,7 @@ export default function Projects() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://github.com/abdelhamidbouazi/ft_irc"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -138,7 +180,7 @@ export default function Projects() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://github.com/abdelbarimessah/inception"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -177,7 +219,7 @@ export default function Projects() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://www.abdelbari.me"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -216,7 +258,7 @@ export default function Projects() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://github.com/abdelbarimessah/cub3d_42"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -255,7 +297,7 @@ export default function Projects() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.youtube.com/"
+                  url="https://github.com/abdelbarimessah/minishell"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -284,7 +326,7 @@ export default function Projects() {
           </span>
         </div>
         <div className="w-full">
-          <HoverEffect items={projects} />
+          <HoverEffect items={pro} />
         </div>
       </div>
       <Footer />
@@ -292,49 +334,5 @@ export default function Projects() {
   );
 }
 
-export function CardHoverEffectDemo() {
-  return (
-    <div className="max-w-5xl mx-auto px-8">
-      <HoverEffect items={projects} />
-    </div>
-  );
-}
-export const projects = [
-  {
-    title: "Philosophers",
-    description: "Solve The Dining Philosophers Problem ",
-    link: "https://stripe.com",
-    tags: "C Language, Mutex, Semaphore",
-  },
-  {
-    title: "NET PRACTICE",
-    description: "Project To Dicover The Networking And The Subnetting",
-    link: "https://netflix.com",
-    tags: "Subnetting, TCP/UDP, IPV4/IPV6",
-  },
-  {
-    title: "PUSH SWAP",
-    description: "Approaches For Data Manipulation And Organization",
-    link: "https://google.com",
-    tags: "C Language, Linked List",
-  },
-  {
-    title: "SO LONG",
-    description: "2D Game Inspired By The Packman Game",
-    link: "https://meta.com",
-    tags: "C Language, Minilibx",
-  },
-  {
-    title: "BORN2BEROOT",
-    description:
-      "This Project Is A Introduction To The Wonderfull Word of Virtualization",
-    link: "https://amazon.com",
-    tags: "VirtualBOX",
-  },
-  {
-    title: "LIBFT",
-    description: "This Project Is About Coding a C Library",
-    link: "https://microsoft.com",
-    tags: "C Language",
-  },
-];
+export default Projects;
+
