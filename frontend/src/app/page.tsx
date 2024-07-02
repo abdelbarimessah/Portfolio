@@ -22,7 +22,7 @@ function Home() {
           <Image src={"./assets/dotedLeft.svg"} alt="arrow" fill={true}></Image>
         </div>
       </div> */}
-      <div className=" lg:w-[1025px] w-full sm:px-16 px-5 lg:h-[423px] relative  flex lg:flex-row flex-col items-center justify-center ">
+      <div className=" lg:w-[1025px] w-full sm:px-16 px-14 lg:h-[423px] relative  flex lg:flex-row flex-col items-center justify-center ">
         {/* <div className="absolute top-[90px] left-[525px] z-0">
           <div className="relative w-[155px] h-[155px] flex items-center justify-center">
             <Image
@@ -91,7 +91,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[1025px] lg:px-0 px-5 relative flex flex-col items-center mb-[63px] justify-center ">
+      <div className="w-full lg:w-[1025px] lg:px-0 px-14 relative flex flex-col items-center mb-[63px] justify-center ">
         <div className="absolute w-[42px] h-[30px] bg-color-1 -top-4 left-[170px] flex items-center justify-center">
           <div className="relative w-[25px] h-[20px] flex items-center justify-center">
             <Image src={"./assets/quote.svg"} alt="quote" fill={true}></Image>
@@ -113,7 +113,7 @@ function Home() {
           </span>
         </div>
       </div>
-      <div className=" w-full lg:px-0 px-5 lg:w-[1025px] flex items-center justify-center flex-col gap-[50px] ">
+      <div className=" w-full lg:px-0 px-14 lg:w-[1025px] flex items-center justify-center flex-col gap-[50px] ">
         <div className="w-full h-[42px] flex justify-between  items-center">
           <div className="w-[701px] h-full pr-1  flex items-center justify-center gap-[16px]">
             <div className="flex  items-center justify-center">
@@ -268,7 +268,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className=" lg:px-0 px-5 w-full lg:w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
+      <div className=" lg:px-0 px-14 w-full lg:w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
         <div className="w-full flex items-center justify-start gap-[16px]">
           <div className="flex  items-center justify-center">
             <span className="font-fira-code text-[32px] text-color-2 font-medium">
@@ -376,7 +376,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="mb-10 lg:px-0 px-5 w-full lg:w-[1025px] flex flex-col items-start justify-start gap-[23px] ">
+      <div className="mb-10 lg:px-0 px-14 w-full lg:w-[1025px] flex flex-col items-start justify-start gap-[23px] ">
         <div className="w-full flex items-center justify-start gap-[16px]">
           <div className=" flex  items-center justify-center">
             <span className="font-fira-code text-[32px] text-color-2 font-medium">
@@ -448,7 +448,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[1025px] lg:px-0 px-5">
+      <div className="w-full lg:w-[1025px] lg:px-0 px-14">
         <section id="contacts">
           <div className="w-full lg:w-[1025px] flex flex-col items-start justify-center gap-[45px]">
             <div className="w-full  flex items-center justify-start gap-[16px]">
@@ -466,7 +466,7 @@ function Home() {
               <div className="w-full lg:w-[505px] h-full flex items-center justify-center ">
                 <TextGenerateEffect words={words} />
               </div>
-              <div className=" w-full lg:w-[404px] h-[200px] flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
+              <div className=" w-full lg:w-[404px] pb-4 flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
                 <div className="w-full flex items-center justify-center">
                   <span className="font-fira-code font-semibold text-[16px] text-color-0 ">
                     Message me here
@@ -474,7 +474,7 @@ function Home() {
                 </div>
                 <div className="w-full flex flex-col items-center justify-center">
                   <div className="w-full flex gap-4  flex-col items-center justify-center">
-                    <div className="w-full flex  items-center justify-start px-7 cursor-pointer gap-7">
+                    <div className="w-full flex lg:flex-row flex-col  items-center justify-start px-1 lg:px-7 cursor-pointer gap-2 lg:gap-7">
                       <div className="relative w-[25px] h-[25px] object-cover">
                         <Image
                           src={"./assets/mail1.svg"}
@@ -488,7 +488,7 @@ function Home() {
                         </span>
                       </div>
                     </div>
-                    <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
+                    <div className="w-full flex lg:flex-row flex-col  items-center justify-start px-1 lg:px-7 cursor-pointer gap-2 lg:gap-7">
                       <div className="relative w-[25px] h-[25px] object-cover">
                         <Image
                           src={"./assets/phone.svg"}
@@ -502,7 +502,7 @@ function Home() {
                         </span>
                       </div>
                     </div>
-                    <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
+                    <div className="w-full flex lg:flex-row flex-col  items-center justify-start px-1 lg:px-7 cursor-pointer gap-2 lg:gap-7">
                       <div className="relative w-[25px] h-[25px] object-cover">
                         <Image
                           src={"./assets/discord.svg"}
