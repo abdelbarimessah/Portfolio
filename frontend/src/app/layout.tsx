@@ -20,14 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-fira-code">
       <link rel="icon" href="/assets/favicon.ico" sizes="any" />
-      <body className="no-scrollbar overflow-x-hidden bg-color-1">
-        <div className="flex bg-color-1 flex-col w-screen min-h-screen relative no-scrollbar">
+      <body className="no-scrollbar overflow-x-hidden bg-color-1 flex flex-col w-screen min-h-screen relative">
           <div className="flex items-center justify-center w-full absolute top-0 ">
             <LeftLine />
             <NavBare />
           </div>
           {children}
-        </div>
       </body>
     </html>
   );

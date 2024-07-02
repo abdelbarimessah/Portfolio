@@ -35,6 +35,7 @@ body {
 }
 
 
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -42,5 +43,5 @@ body {
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  /* scrollbar-width: none;  Firefox */
 }

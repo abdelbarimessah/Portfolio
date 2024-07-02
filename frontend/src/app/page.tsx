@@ -14,16 +14,16 @@ function Home() {
   requests or questions, don’t hesitate to contact me.`;
 
   return (
-    <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar">
-      <div className="shap absolute w-[91px] h-[91px] border border-color-3 left-[96%] top-[40%]"></div>
+    <div className="no-scrollbar h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar bg-color-1">
+      {/* <div className="shap absolute w-[91px] h-[91px] border border-color-3 left-[96%] top-[40%]"></div>
       <div className="shap absolute w-[155px] h-[155px] border border-color-3 top-[75%] left-[97%]"></div>
       <div className="shap absolute top-[50%] -left-8">
         <div className="w-[84px] h-[84px] flex items-center justify-center relative object-cover">
           <Image src={"./assets/dotedLeft.svg"} alt="arrow" fill={true}></Image>
         </div>
-      </div>
-      <div className="shap w-[1025px] h-[423px] relative  flex items-center justify-center">
-        <div className="absolute top-[90px] left-[525px] z-0">
+      </div> */}
+      <div className=" lg:w-[1025px] w-full sm:px-16 px-5 lg:h-[423px] relative  flex lg:flex-row flex-col items-center justify-center ">
+        {/* <div className="absolute top-[90px] left-[525px] z-0">
           <div className="relative w-[155px] h-[155px] flex items-center justify-center">
             <Image
               src="./assets/rectangleLeftNew.svg"
@@ -36,12 +36,12 @@ function Home() {
           <div className="relative w-[70px] h-[70px] flex items-center justify-center">
             <Image src="./assets/rectangleRight.svg" fill={true} alt=""></Image>
           </div>
-        </div>
-        <div className=" h-full w-[537px] flex flex-col gap-[32px] items-center justify-center">
-          <div className="w-full h-[84px] ">
+        </div> */}
+        <div className=" h-full w-full lg:w-[537px] flex flex-col gap-[32px] items-center justify-center">
+          <div className="w-full h-full lg:h-[84px] ">
             <div className="w-full">
               <span className="font-fira-code text-[25px] font-semibold text-color-0">
-                I m Abdelbari Messah
+                I m Abdelbari Messah {" "}
               </span>
               <FlipWords
                 className="font-fira-code text-[25px] font-semibold text-color-2"
@@ -58,7 +58,7 @@ function Home() {
               </span>
             </div>
           </div>
-          <div className="w-full h-[50px] ">
+          <div className="w-full h-full lg:h-[50px] ">
             <span className="font-fira-code text-[16px] text-color-3">
               I bring together back-end power and front-end finesse to build
               comprehensive digital solutions
@@ -74,16 +74,13 @@ function Home() {
             </a>
           </div>
         </div>
-        <div className=" h-full w-[492px]">
-          <div className="relative w-[457px] h-[386px] flex items-center justify-center z-10">
+        <div className=" w-full lg:w-[492px] flex items-center justify-center flex-col ">
+          <div className="relative w-full lg:w-[457px]  h-[386px] flex items-center justify-center  ">
             <Image src="./assets/manImage.svg" fill={true} alt=""></Image>
           </div>
-        </div>
-
-        <div className=" absolute bottom-0  flex left-[553px]">
-          <div className="h-[37px] w-[402px] absolute bottom-0  flex items-center justify-start px-3 gap-[16px] border border-color-2">
+          <div className="sm:h-[37px] w-full sm:w-[402px] flex  items-center justify-start px-5  gap-[16px] border border-color-2">
             <div className="w-4 h-4 bg-color-2"></div>
-            <div className="flex gap-[10px] items-center justify-center">
+            <div className="flex sm:flex-row flex-col  sm:gap-[10px]  items-start sm:items-center justify-center">
               <span className="font-fira-code font-medium text-[16px] text-color-3">
                 Currently working on
               </span>
@@ -94,7 +91,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[1025px] relative flex flex-col items-center mb-[63px] justify-center">
+      <div className="w-full lg:w-[1025px] lg:px-0 px-5 relative flex flex-col items-center mb-[63px] justify-center ">
         <div className="absolute w-[42px] h-[30px] bg-color-1 -top-4 left-[170px] flex items-center justify-center">
           <div className="relative w-[25px] h-[20px] flex items-center justify-center">
             <Image src={"./assets/quote.svg"} alt="quote" fill={true}></Image>
@@ -105,7 +102,7 @@ function Home() {
             <Image src={"./assets/quote.svg"} alt="quote" fill={true}></Image>
           </div>
         </div>
-        <div className="w-[712px] h-[95px] border border-color-3 flex items-center justify-center">
+        <div className="w-full lg:w-[712px] px-2 h-[95px] border border-color-3 flex items-center justify-center">
           <span className="font-fira-code text-[24px] font-medium text-color-0">
             Talk is cheap. Show me the code.
           </span>
@@ -116,9 +113,9 @@ function Home() {
           </span>
         </div>
       </div>
-      <div className="h-[518px] w-[1025px] flex items-center justify-center flex-col z-50 gap-[50px] pb-10">
-        <div className="w-full flex justify-between items-center">
-          <div className="flex items-center justify-center gap-[16px]">
+      <div className=" w-full lg:px-0 px-5 lg:w-[1025px] flex items-center justify-center flex-col gap-[50px] ">
+        <div className="w-full h-[42px] flex justify-between  items-center">
+          <div className="w-[701px] h-full pr-1  flex items-center justify-center gap-[16px]">
             <div className="flex  items-center justify-center">
               <span className="font-fira-code text-[32px] text-color-2 font-medium">
                 #
@@ -127,14 +124,17 @@ function Home() {
                 Projects
               </span>
             </div>
-            <div className="w-[511px] h-[1px] bg-color-2"></div>
+            <div className="w-full lg:w-[511px] h-[1px]»"></div>
           </div>
-          <div className="flex items-center gap-[11px] justify-center cursor-pointer">
-            <Link href={"/projects"}>
-              <span className="font-fira-code font-semibold text-[16px] ">
-                View all
-              </span>
-            </Link>
+          <div className="flex items-center gap-[11px] h-full w-[150px]  justify-center cursor-pointer">
+            <div className="h-full w-[100px] flex items-center justify-center ">
+
+              <Link href={"/projects"}>
+                <span className="font-fira-code font-semibold text-[16px] ">
+                  View all
+                </span>
+              </Link>
+            </div>
             <div className="relative  w-[20px] h-[25px] flex items-center justify-center">
               <Image
                 src={"./assets/arrowRight.svg"}
@@ -144,7 +144,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full flex items-start justify-center gap-[16px]">
+        <div className="w-full flex-wrap flex lg:flex-row items-start justify-center gap-[16px]">
           <div className="flex items-start justify-start flex-col w-[330px] h-[440px] border border-color-3">
             <div className="w-full h-[190px] border-b border-color-3 relative flex items-center justify-center object-cover">
               <Image
@@ -268,8 +268,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[251px] mb-10 w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
-        <div className="flex items-center justify-center gap-[16px]">
+      <div className="h-[251px] lg:px-0 px-5  w-full lg:w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
+        <div className="w-full flex items-center justify-center gap-[16px]">
           <div className="flex  items-center justify-center">
             <span className="font-fira-code text-[32px] text-color-2 font-medium">
               #
@@ -280,7 +280,7 @@ function Home() {
           </div>
           <div className="w-[511px] h-[1px] bg-color-2"></div>
         </div>
-        <div className="w-full flex items-start justify-center gap-[16px] ">
+        <div className="w-full flex-wrap flex lg:flex-row  items-start justify-center gap-[16px] ">
           <div className="w-[192px] h-[125px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
@@ -447,7 +447,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <section id="contacts">
+      {/* <section id="contacts">
         <div className="w-[1025px] h-[228px] flex flex-col items-start justify-center gap-[45px] mt-[112px] mb-20">
           <div className="flex items-center justify-center gap-[16px]">
             <div className="flex  items-center justify-center">
@@ -520,7 +520,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer />  */}
     </div>
   );
 }
