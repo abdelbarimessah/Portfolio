@@ -8,26 +8,26 @@ const NavBare = () => {
 
   return (
     <div className="w-full h-full flex items-center justify-center z-[1000] ">
-      <div className="bg-color-1 h-[61px] w-[1024px]  flex items-center justify-between fixed top-0">
-        <Link href={"/home"}>
-        <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
-          <div className="relative w-[28px] h-[28px] flex items-center justify-center">
-            <Image src="./assets/Logo.svg" fill={true} alt=""></Image>
+      <div className="bg-color-1 h-[61px] xl:w-[1024px] w-full xl:px-10 flex items-center justify-between fixed top-0">
+        <Link href={"/"}>
+          <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
+            <div className="relative w-[28px] h-[28px] flex items-center justify-center">
+              <Image src="./assets/Logo.svg" fill={true} alt=""></Image>
+            </div>
+            <span className="font-fira-code font-semibold tracking-wider text-[16px] capitalize text-color-0">
+              Abdelbari
+            </span>
           </div>
-          <span className="font-fira-code font-semibold tracking-wider text-[16px] capitalize text-color-0">
-            Abdelbari
-          </span>
-        </div>
         </Link>
         <div className="h-full flex items-center justify-center gap-[32px] ">
-          <Link href={"/home"}>
+          <Link href={"/"}>
             <div className="h-full flex items-center justify-center cursor-pointer ">
               <span className="font-fira-code font-medium text-[16px] text-color-2">
                 #
               </span>
               <span
                 className={`${
-                  path === "/home" ? "text-color-0" : "text-color-3"
+                  path === "/" ? "text-color-0" : "text-color-3"
                 } hover:text-color-0 font-fira-code font-medium text-[16px]`}
               >
                 HOME

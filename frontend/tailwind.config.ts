@@ -19,6 +19,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      // colors: {
+      //   'color-0': '#aec3b0',
+      //   'color-1': '#01161e',
+      //   'color-2': '#598392',
+      //   // 'color-2' : '#C778DD',
+      //   'color-3': '#124559',
+      // },
       colors:{
         'color-0' : '#FFFFFF',
         'color-1' : '#282C33',
@@ -41,7 +48,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
