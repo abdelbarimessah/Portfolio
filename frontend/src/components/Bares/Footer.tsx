@@ -3,11 +3,11 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="w-full h-[208px] bottom-0 flex items-center justify-center left-0 border-t-2 pt-10 pb-2 border-color-3 ">
-      <div className="h-full w-[1025px] flex flex-col items-center justify-between ">
-        <div className="w-full h-[75px] flex items-start justify-between ">
-          <div className="w-[346px] h-[58px] gap-[16px] flex flex-col items-start justify-start">
-            <div className="flex justify-start items-center gap-[34px]">
+    <div className="w-full bottom-0 flex items-center justify-center left-0 border-t-2 pt-10 pb-2 border-color-3 ">
+      <div className=" lg:px-0 px-5 w-full lg:w-[1025px] lg:gap-0 gap-3 flex flex-col items-center justify-between ">
+        <div className="w-full flex flex-col md:flex-row  gap-5   items-start justify-between ">
+          <div className="w-[346px]  gap-[16px] flex flex-col items-start justify-start">
+            <div className="flex flex-col md:flex-row  justify-start items-start lg:items-center md:gap-[34px] gap-2">
               <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
                 <div className="relative w-[28px] h-[28px] flex items-center justify-center">
                   <Image src="./assets/LogoPerNew.svg" fill={true} alt=""></Image>
@@ -54,7 +54,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full h-[21px flex items-center justify-center ">
+        <div className=" w-full flex items-center justify-center ">
           <span className="font-fira-code text-[16px] text-color-3">
             © Copyright 2024. Made by Abdelari
           </span>

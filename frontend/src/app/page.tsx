@@ -268,8 +268,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[251px] lg:px-0 px-5  w-full lg:w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
-        <div className="w-full flex items-center justify-center gap-[16px]">
+      <div className=" lg:px-0 px-5 w-full lg:w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
+        <div className="w-full flex items-center justify-start gap-[16px]">
           <div className="flex  items-center justify-center">
             <span className="font-fira-code text-[32px] text-color-2 font-medium">
               #
@@ -376,20 +376,21 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[508px] w-[1025px]  flex flex-col items-start justify-start gap-[23px] ">
-        <div className="flex items-center justify-center gap-[16px]">
-          <div className="flex  items-center justify-center">
+      <div className="mb-10 lg:px-0 px-5 w-full lg:w-[1025px] flex flex-col items-start justify-start gap-[23px] ">
+        <div className="w-full flex items-center justify-start gap-[16px]">
+          <div className=" flex  items-center justify-center">
             <span className="font-fira-code text-[32px] text-color-2 font-medium">
               #
             </span>
             <span className="font-fira-code text-[32px] text-color-0 font-medium">
-              About-me
+              About
             </span>
+            <span className="font-fira-code text-[32px] text-color-0 font-medium">&nbsp;me</span>
           </div>
           <div className="w-[320px] h-[1px] bg-color-2"></div>
         </div>
-        <div className="w-full flex items-start justify-start">
-          <div className="h-full w-[515px] pb-24 gap-[27px] flex flex-col items-center justify-center">
+        <div className="w-full  flex lg:flex-row flex-col items-center justify-center lg:items-start lg:justify-between">
+          <div className=" lg:h-[413px] w-full lg:w-[515px] pb-24 gap-[27px] flex flex-col items-center justify-center">
             <div className="w-full">
               <p className="font-fira-code text-[16px] text-color-3">
                 Hello, i’m Abdelbari MESSAH
@@ -403,9 +404,9 @@ function Home() {
                 development of innovative software solutions.
               </p>
             </div>
-            <div className="w-full flex items-start gap-12">
+            <div className="w-full sm:flex-row flex-col flex items-start gap-4 sm:gap-12">
               <Link href="/about">
-                <div className="w-[148px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-center">
+                <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-2">
                   <span className="">Read more</span>
                   <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
                     <Image
@@ -420,7 +421,7 @@ function Home() {
                 href={"http://localhost:8000/assets/messah-fr.pdf"}
                 target="_blank"
               >
-                <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-center">
+                <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-2">
                   <span className="">Download CV</span>
                   <div className="w-[15px] h-[15px] flex items-center justify-center relative object-cover">
                     <Image
@@ -433,94 +434,99 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className="h-full w-1 flex-1 pb-10 relative">
-            <div className="absolute h-[1px] w-[271px] bg-color-2 bottom-[37px] right-5"></div>
-            <div className="w-full h-full flex items-center justify-end">
-              <div className="w-[339px] h-[507px] mt-1 flex items-center justify-center relative object-cover">
-                <Image
-                  src={"./assets/manimage1.svg"}
-                  alt="arrow"
-                  fill={true}
-                ></Image>
-              </div>
+          <div className="h-[413px] w-[343px] relative">
+            <div className="w-full h-full flex items-center justify-end relative object-cover">
+              <Image
+                src={"./assets/manimage1.svg"}
+                alt="arrow"
+                fill={true}
+              ></Image>
+            </div>
+            <div className="w-full flex items-center justify-center">
+              <div className=" h-[1px] w-[271px] bg-color-2 "></div>
             </div>
           </div>
         </div>
       </div>
-      {/* <section id="contacts">
-        <div className="w-[1025px] h-[228px] flex flex-col items-start justify-center gap-[45px] mt-[112px] mb-20">
-          <div className="flex items-center justify-center gap-[16px]">
-            <div className="flex  items-center justify-center">
-              <span className="font-fira-code text-[32px] text-color-2 font-medium">
-                #
-              </span>
-              <span className="font-fira-code text-[32px] text-color-0 font-medium">
-                Contacts
-              </span>
-            </div>
-            <div className="w-[150px] h-[1px] bg-color-2"></div>
-          </div>
-          <div className="w-full flex items-start justify-between ">
-            <div className="w-[505px] h-full flex items-center justify-center ">
-              <TextGenerateEffect words={words} />
-            </div>
-            <div className="w-[404px] h-[200px] flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
-              <div className="w-full flex items-center justify-center">
-                <span className="font-fira-code font-semibold text-[16px] text-color-0 ">
-                  Message me here
+      <div className="w-full lg:w-[1025px] lg:px-0 px-5">
+        <section id="contacts">
+          <div className="w-full lg:w-[1025px] flex flex-col items-start justify-center gap-[45px]">
+            <div className="w-full  flex items-center justify-start gap-[16px]">
+              <div className="flex  items-center justify-center">
+                <span className="font-fira-code text-[32px] text-color-2 font-medium">
+                  #
+                </span>
+                <span className="font-fira-code text-[32px] text-color-0 font-medium">
+                  contacts
                 </span>
               </div>
-              <div className="w-full flex flex-col items-center justify-center">
-                <div className="w-full flex gap-4  flex-col items-center justify-center">
-                  <div className="w-full flex  items-center justify-start px-7 cursor-pointer gap-7">
-                    <div className="relative w-[25px] h-[25px] object-cover">
-                      <Image
-                        src={"./assets/mail1.svg"}
-                        alt="arrow"
-                        fill={true}
-                      ></Image>
+              <div className="w-[150px] h-[1px] bg-color-2"></div>
+            </div>
+            <div className="w-full flex lg:flex-row flex-col gap-6 lg:gap-0 items-start justify-between ">
+              <div className="w-full lg:w-[505px] h-full flex items-center justify-center ">
+                <TextGenerateEffect words={words} />
+              </div>
+              <div className=" w-full lg:w-[404px] h-[200px] flex  gap-[16px] flex-col items-center pt-3 justify-start border border-color-3">
+                <div className="w-full flex items-center justify-center">
+                  <span className="font-fira-code font-semibold text-[16px] text-color-0 ">
+                    Message me here
+                  </span>
+                </div>
+                <div className="w-full flex flex-col items-center justify-center">
+                  <div className="w-full flex gap-4  flex-col items-center justify-center">
+                    <div className="w-full flex  items-center justify-start px-7 cursor-pointer gap-7">
+                      <div className="relative w-[25px] h-[25px] object-cover">
+                        <Image
+                          src={"./assets/mail1.svg"}
+                          alt="arrow"
+                          fill={true}
+                        ></Image>
+                      </div>
+                      <div className="">
+                        <span className="font-fira-code  text-[12px] sm:text-[16px] text-color-3">
+                          abdelbari.messah.dev@gmail.com
+                        </span>
+                      </div>
                     </div>
-                    <div className="">
-                      <span className="font-fira-code text-[16px] text-color-3">
-                        abdelbari.messah.dev@gmail.com
-                      </span>
+                    <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
+                      <div className="relative w-[25px] h-[25px] object-cover">
+                        <Image
+                          src={"./assets/phone.svg"}
+                          alt="arrow"
+                          fill={true}
+                        ></Image>
+                      </div>
+                      <div className="">
+                        <span className="font-fira-code text-[12px] sm:text-[16px] text-color-3">
+                          +212 651-094250
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
-                    <div className="relative w-[25px] h-[25px] object-cover">
-                      <Image
-                        src={"./assets/phone.svg"}
-                        alt="arrow"
-                        fill={true}
-                      ></Image>
-                    </div>
-                    <div className="">
-                      <span className="font-fira-code text-[16px] text-color-3">
-                        +212 651-094250
-                      </span>
-                    </div>
-                  </div>
-                  <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
-                    <div className="relative w-[25px] h-[25px] object-cover">
-                      <Image
-                        src={"./assets/discord.svg"}
-                        alt="arrow"
-                        fill={true}
-                      ></Image>
-                    </div>
-                    <div className="">
-                      <span className="font-fira-code text-[16px] text-color-3">
-                        Abdelbari#3138
-                      </span>
+                    <div className="w-full flex  items-center cursor-pointer justify-start px-7 gap-7">
+                      <div className="relative w-[25px] h-[25px] object-cover">
+                        <Image
+                          src={"./assets/discord.svg"}
+                          alt="arrow"
+                          fill={true}
+                        ></Image>
+                      </div>
+                      <div className="">
+                        <span className="font-fira-code text-[12px] sm:text-[16px] text-color-3">
+                          Abdelbari#3138
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <Footer />  */}
+        </section>
+      </div>
+      <div className="w-full">
+
+        <Footer />
+      </div>
     </div>
   );
 }
