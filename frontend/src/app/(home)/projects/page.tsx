@@ -48,7 +48,7 @@ const  Projects = () => {
   ];
   return (
     <div className=" h-full w-full flex flex-col gap-[120px] items-center justify-center top-[123px] relative no-scrollbar">
-      <div className=" w-[1025px] h-[77px] flex items-start justify-start">
+      <div className=" lg:px-0 px-14 w-full lg:w-[1025px] h-[77px] flex items-start justify-start">
         <div className="h-full w-[183px] gap-[14px] flex flex-col items-center justify-center">
           <div className="w-full flex">
             <span className="font-fira-code font-semibold text-[32px] text-color-2">
@@ -65,16 +65,16 @@ const  Projects = () => {
           </div>
         </div>
       </div>
-      <div className="w-[1025px] h-[919px] flex flex-col items-start justify-start gap-[48px]">
+      <div className="lg:px-0 px-14 w-full lg:w-[1025px]  flex flex-col items-start justify-start gap-[48px]">
         <div className="w-full flex  items-start justify-start">
           <span className="font-fira-code font-semibold text-[32px] text-color-2">
             #
           </span>
           <span className="font-fira-code font-medium text-[32px] text-color-0">
-            Major-projects
+            Major&nbsp;projects
           </span>
         </div>
-        <div className="w-full flex flex-wrap items-start justify-start gap-4 ">
+        <div className="w-full flex flex-wrap items-center justify-center lg:items-start lg:justify-start gap-4 ">
           <div className="flex items-start justify-start flex-col w-[330px] h-[440px] border border-color-3">
             <div className="w-full h-[190px] border-b border-color-3 relative flex items-center justify-center object-cover">
               <Image
@@ -219,7 +219,7 @@ const  Projects = () => {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.abdelbari.me"
+                  url="https://www.abdelbari.me/"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
@@ -316,13 +316,13 @@ const  Projects = () => {
           </div>
         </div>
       </div>
-      <div className=" w-[1025px] h-[600px] flex flex-col items-start justify-start gap-12 mb-20">
+      <div className="w-full lg:w-[1025px] lg:px-0 px-14 flex flex-col items-start justify-start gap-12 mb-20">
         <div className="w-full flex  items-start justify-start">
           <span className="font-fira-code font-semibold text-[32px] text-color-2">
             #
           </span>
           <span className="font-fira-code font-medium text-[32px] text-color-0">
-            Minor-projects
+            Minor&nbsp;projects
           </span>
         </div>
         <div className="w-full">

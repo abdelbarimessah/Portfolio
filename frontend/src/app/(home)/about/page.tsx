@@ -1,11 +1,12 @@
 import Footer from "@/components/Bares/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar ">
-      <div className="flex flex-col">
-        <div className=" w-[1025px] h-[77px] flex items-start justify-start ">
+      <div className="flex flex-col gap-10">
+        <div className=" xl:px-0 px-14 w-full lg:w-[1025px] h-[77px] flex items-start justify-start ">
           <div className="h-full w-[183px] gap-[14px] flex flex-col items-center justify-center">
             <div className="w-full flex">
               <span className="font-fira-code font-semibold text-[32px] text-color-2">
@@ -22,9 +23,9 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="h-[508px] w-[1025px] flex flex-col items-start justify-start gap-[23px]">
-          <div className="w-full flex items-start justify-start">
-            <div className="h-full w-[515px] pb-24 gap-[27px] flex flex-col items-center justify-center">
+        <div className=" xl:px-0 px-14 w-full lg:w-[1025px] flex flex-col items-start justify-start gap-[23px] ">
+          <div className="w-full  flex lg:flex-row flex-col items-center justify-center lg:items-start lg:justify-between">
+            <div className=" lg:h-[413px] w-full lg:w-[515px] pb-24 gap-[27px] flex flex-col items-center justify-center">
               <div className="w-full">
                 <p className="font-fira-code text-[16px] text-color-3">
                   Hello, i’m Abdelbari MESSAH
@@ -33,18 +34,17 @@ function About() {
                   development, Front-End and Back-End development and a strong
                   foundation in computer science fundamentals.
                   <br /> <br />
-                  Eager to leverage problem-solving skills and technical
-                  expertise in a fast-paced professional environment to
-                  contribute to the development of innovative software
-                  solutions.
+                  Eager to leverage problem-solving skills and technical expertise
+                  in a fast-paced professional environment to contribute to the
+                  development of innovative software solutions.
                 </p>
               </div>
-              <div className="w-full flex items-start gap-12">
+              <div className="w-full sm:flex-row flex-col flex items-start gap-4 sm:gap-12">
                 <a
                   href={"http://localhost:8000/assets/messah-fr.pdf"}
                   target="_blank"
                 >
-                  <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-center">
+                  <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-2">
                     <span className="">Download CV</span>
                     <div className="w-[15px] h-[15px] flex items-center justify-center relative object-cover">
                       <Image
@@ -57,22 +57,22 @@ function About() {
                 </a>
               </div>
             </div>
-            <div className="h-full w-1 flex-1 pb-10 relative">
-              <div className="absolute h-[1px] w-[271px] bg-color-2 bottom-[37px] right-5"></div>
-              <div className="w-full h-full flex items-center justify-end">
-                <div className="w-[339px] h-[507px] mt-1 flex items-center justify-center relative object-cover">
-                  <Image
-                    src={"./assets/manimage1.svg"}
-                    alt="arrow"
-                    fill={true}
-                  ></Image>
-                </div>
+            <div className="h-[413px] w-[343px] relative">
+              <div className="w-full h-full flex items-center justify-end relative object-cover">
+                <Image
+                  src={"./assets/manimage1.svg"}
+                  alt="arrow"
+                  fill={true}
+                ></Image>
+              </div>
+              <div className="w-full flex items-center justify-center">
+                <div className=" h-[1px] w-[271px] bg-color-2 "></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="h-[251px] mb-10 w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
+      <div className=" xl:px-0 px-14 w-full lg:w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
         <div className="flex items-center justify-center gap-[16px]">
           <div className="flex  items-center justify-center">
             <span className="font-fira-code text-[32px] text-color-2 font-semibold">
@@ -83,7 +83,7 @@ function About() {
             </span>
           </div>
         </div>
-        <div className="w-full flex items-start justify-center gap-[16px] ">
+        <div className="w-full flex-wrap flex lg:flex-row  items-start justify-center gap-[16px] ">
           <div className="w-[192px] h-[125px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
@@ -179,7 +179,8 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="mb-10 w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
+
+      <div className="xl:px-0 px-14 w-full lg:w-[1025px] flex items-start justify-start flex-col gap-[48px] z-50">
         <div className="flex items-center justify-center gap-[16px]">
           <div className="flex  items-center justify-center">
             <span className="font-fira-code text-[32px] text-color-2 font-semibold">
