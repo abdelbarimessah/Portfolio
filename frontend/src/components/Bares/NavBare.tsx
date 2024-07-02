@@ -79,21 +79,21 @@ const NavBare = () => {
         <div className="w-full h-screen flex flex-col  pb-[70px]  fixed top-[60px] bg-color-1  justify-between sm:hidden">
           <div className="h-[338px] gap-[32px] w-[174px] flex flex-col ml-10 items-center justify-center ">
               <div className="w-full cursor-pointer hover:text-color-0">
-            <Link href={"/"}>
+            <Link href={"/"} onClick={() => setIsOpen(false)}>
                 <span className="font-fira-code font-medium text-[32px] text-color-2">#</span>
                 <span className={`${path === "/" ? "text-color-0" : "text-color-3"
                   } font-fira-code font-medium text-[32px] `}>Home</span>
             </Link>
               </div>
               <div className="w-full cursor-pointer hover:text-color-0">
-            <Link href={"/projects"}>
+            <Link href={"/projects"} onClick={() => setIsOpen(false)}>
                 <span className="font-fira-code font-medium text-[32px] text-color-2">#</span>
                 <span className={`${path === "/projects" ? "text-color-0" : "text-color-3"
                   } font-fira-code font-medium text-[32px] `}>Projects</span>
             </Link>
               </div>
               <div className="w-ful cursor-pointer hover:text-color-0">
-            <Link href={"/about"}>
+            <Link href={"/about"} onClick={() => setIsOpen(false)}>
                 <span className="font-fira-code font-medium text-[32px] text-color-2">#</span>
                 <span className={`${path === "/about" ? "text-color-0" : "text-color-3"
                   } font-fira-code font-medium text-[32px]  `}>About-me</span>

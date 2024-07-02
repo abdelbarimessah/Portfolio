@@ -6,7 +6,7 @@ function Footer() {
     <div className="w-full bottom-0 flex items-center justify-center left-0 border-t-2 pt-10 pb-2 border-color-3 ">
       <div className=" lg:px-0 px-5 w-full lg:w-[1025px] lg:gap-0 gap-3 flex flex-col items-center justify-between ">
         <div className="w-full flex flex-col md:flex-row  gap-5   items-start justify-between ">
-          <div className="w-[346px]  gap-[16px] flex flex-col items-start justify-start">
+          <div className="w-[346px] px-2  gap-[16px] flex flex-col items-start justify-start">
             <div className="flex flex-col md:flex-row  justify-start items-start lg:items-center md:gap-[34px] gap-2">
               <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
                 <div className="relative w-[28px] h-[28px] flex items-center justify-center">
@@ -26,8 +26,8 @@ function Footer() {
               </span>
             </div>
           </div>
-          <div className="h-full w-[112px] flex flex-col items-start justify-start gap-3 ">
-            <div className="w-full flex items-center justify-center">
+          <div className="h-full w-[112px] flex flex-col items-start  justify-start gap-3 ">
+            <div className="w-full flex px-2 items-start justify-start md:items-center md:justify-center">
               <span className="font-medium font-fira-code text-[24px] text-color-0">
                 Media
               </span>

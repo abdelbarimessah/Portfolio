@@ -1,5 +1,3 @@
-import LeftLine from "@/components/Bares/LeftLine";
-import NavBare from "@/components/Bares/NavBare";
 import ParticleBackground from "@/components/Particles/Tspraticles";
 
 export default function RootLayout({
