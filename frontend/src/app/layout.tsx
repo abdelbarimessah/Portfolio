@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBare from "@/components/Bares/NavBare";
 import LeftLine from "@/components/Bares/LeftLine";
 import Head from "next/head";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,12 +23,12 @@ export default function RootLayout({
       <link rel="icon" href="/assets/favicon.ico" sizes="any" />
       <body className="no-scrollbar overflow-x-hidden  flex flex-col w-screen min-h-screen relative">
         <div className="flex flex-col flex-1 bg-color-1">
-
-        <div className="flex items-center justify-center w-full absolute top-0 ">
-          <LeftLine />
-          <NavBare />
-        </div>
-        {children}
+          <div className="flex items-center justify-center w-full absolute top-0 ">
+            <LeftLine />
+            <NavBare />
+          </div>
+          {children}
+          <SpeedInsights />
         </div>
       </body>
     </html>
