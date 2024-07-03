@@ -91,7 +91,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[1025px] xl:px-0 px-14 relative bg-slate-700  flex flex-col items-center mb-[63px] justify-center ">
+      <div className="w-full lg:w-[1025px] xl:px-0 px-14 relative   flex flex-col items-center mb-[63px] justify-center ">
         <div className="absolute w-[42px] h-[30px] bg-color-1 -top-4 left-[170px] flex items-center justify-center">
           <div className="relative w-[25px] h-[20px] flex items-center justify-center">
             <Image src={"./assets/quote.svg"} alt="quote" fill={true}></Image>
