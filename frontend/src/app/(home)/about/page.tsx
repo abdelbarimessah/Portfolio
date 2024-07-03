@@ -330,3 +330,7 @@ function About() {
 }
 
 export default About;
+
+
+// aboute me section in about page
+// the cv

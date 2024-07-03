@@ -91,7 +91,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[1025px] xl:px-0 px-14 relative flex flex-col items-center mb-[63px] justify-center ">
+      <div className="w-full lg:w-[1025px] xl:px-0 px-14 relative bg-slate-700  flex flex-col items-center mb-[63px] justify-center ">
         <div className="absolute w-[42px] h-[30px] bg-color-1 -top-4 left-[170px] flex items-center justify-center">
           <div className="relative w-[25px] h-[20px] flex items-center justify-center">
             <Image src={"./assets/quote.svg"} alt="quote" fill={true}></Image>
@@ -102,15 +102,17 @@ function Home() {
             <Image src={"./assets/quote.svg"} alt="quote" fill={true}></Image>
           </div>
         </div>
-        <div className="w-full lg:w-[712px] px-2 h-[95px] border border-color-3 flex items-center justify-center">
+        <div className="w-full lg:w-[712px] px-2 sm:h-[95px] border border-color-3 flex items-center justify-center">
           <span className="font-fira-code text-[24px] font-medium text-color-0">
             Talk is cheap. Show me the code.
           </span>
         </div>
-        <div className="w-[162px] h-[63px] border-l border-r border-b  border-color-3 absolute -bottom-[63px] right-[157px] flex items-center justify-center">
-          <span className="font-fira-code text-[14px] font-semibold">
-            – Linus Torvalds
-          </span>
+        <div className="w-full lg:w-[712px] flex justify-end">
+          <div className="w-[162px] h-[63px] border-l border-r border-b  border-color-3  -bottom-[63px] right-[157px] flex items-center justify-center">
+            <span className="font-fira-code text-[14px] font-semibold">
+              – Linus Torvalds
+            </span>
+          </div>
         </div>
       </div>
       <div className=" w-full xl:px-0 px-14 lg:w-[1025px] flex items-center justify-center flex-col gap-[50px] ">
@@ -128,7 +130,6 @@ function Home() {
           </div>
           <div className="flex items-center gap-[11px] h-full w-[150px]  justify-center cursor-pointer">
             <div className="h-full w-[100px] flex items-center justify-center ">
-
               <Link href={"/projects"}>
                 <span className="font-fira-code font-semibold text-[16px] ">
                   View all
@@ -385,7 +386,9 @@ function Home() {
             <span className="font-fira-code text-[32px] text-color-0 font-medium">
               About
             </span>
-            <span className="font-fira-code text-[32px] text-color-0 font-medium">&nbsp;me</span>
+            <span className="font-fira-code text-[32px] text-color-0 font-medium">
+              &nbsp;me
+            </span>
           </div>
           <div className="w-[320px] h-[1px] bg-color-2"></div>
         </div>
@@ -406,7 +409,7 @@ function Home() {
             </div>
             <div className="w-full sm:flex-row flex-col flex items-start gap-4 sm:gap-12">
               <Link href="/about">
-                <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-2">
+                <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-3">
                   <span className="">Read more</span>
                   <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
                     <Image
@@ -421,7 +424,7 @@ function Home() {
                 href={"http://localhost:8000/assets/messah-fr.pdf"}
                 target="_blank"
               >
-                <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-2">
+                <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-3">
                   <span className="">Download CV</span>
                   <div className="w-[15px] h-[15px] flex items-center justify-center relative object-cover">
                     <Image
@@ -524,7 +527,6 @@ function Home() {
         </section>
       </div>
       <div className="w-full">
-
         <Footer />
       </div>
     </div>
@@ -533,7 +535,6 @@ function Home() {
 
 export default Home;
 
-// TODO make the home page responsive
 // TODO add the shapes in the home page
 // TODO change the main color
 // TODO try to change the image of the projects
