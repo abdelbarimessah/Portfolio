@@ -11,18 +11,20 @@ export default function LeftLine() {
             <Image src="./assets/Github.svg" fill={true} alt=""></Image>
           </div>
         </Link>
-        <Link target="_blank" href="https://www.linkedin.com/in/abdelbari-messah-60841a232/">
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/abdelbari-messah-60841a232/"
+        >
           <div className="relative w-[32px] h-[32px] flex items-center justify-center cursor-pointer hover:scale-90 ">
             <Image src="./assets/linkedin.svg" fill={true} alt=""></Image>
           </div>
         </Link>
-        <Link  href={"mailto:abdelbari.messah.dev@gmail.com"}>
-        <div className="relative w-[32px] h-[32px] flex items-center justify-center hover:scale-90 cursor-pointer">
-          <Image src="./assets/mail.svg" fill={true} alt=""></Image>
-        </div>
+        <Link href={"mailto:amessah@student.1337.ma"}>
+          <div className="relative w-[32px] h-[32px] flex items-center justify-center hover:scale-90 cursor-pointer">
+            <Image src="./assets/mail.svg" fill={true} alt=""></Image>
+          </div>
         </Link>
       </div>
     </div>
   );
 }
-

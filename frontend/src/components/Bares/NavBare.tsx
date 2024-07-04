@@ -28,8 +28,9 @@ const NavBare = () => {
                 #
               </span>
               <span
-                className={`${path === "/" ? "text-color-0" : "text-color-3"
-                  } hover:text-color-0 font-fira-code font-medium text-[16px]`}
+                className={`${
+                  path === "/" ? "text-color-0" : "text-color-3"
+                } hover:text-color-0 font-fira-code font-medium text-[16px]`}
               >
                 Home
               </span>
@@ -41,8 +42,9 @@ const NavBare = () => {
                 #
               </span>
               <span
-                className={`${path === "/projects" ? "text-color-0" : "text-color-3"
-                  } hover:text-color-0 font-fira-code font-medium text-[16px]`}
+                className={`${
+                  path === "/projects" ? "text-color-0" : "text-color-3"
+                } hover:text-color-0 font-fira-code font-medium text-[16px]`}
               >
                 Projects
               </span>
@@ -54,8 +56,9 @@ const NavBare = () => {
                 #
               </span>
               <span
-                className={`${path === "/about" ? "text-color-0" : "text-color-3"
-                  } hover:text-color-0 font-fira-code font-medium text-[16px]`}
+                className={`${
+                  path === "/about" ? "text-color-0" : "text-color-3"
+                } hover:text-color-0 font-fira-code font-medium text-[16px]`}
               >
                 About-me
               </span>
@@ -63,42 +66,68 @@ const NavBare = () => {
           </Link>
         </div>
         {!isOpen && (
-          <div className="burger w-[24px] h-[24px] flex sm:hidden flex-col items-end cursor-pointer justify-center gap-[5px]" onClick={() => setIsOpen(true)}>
+          <div
+            className="burger w-[24px] h-[24px] flex sm:hidden flex-col items-end cursor-pointer justify-center gap-[5px]"
+            onClick={() => setIsOpen(true)}
+          >
             <div className="w-full h-[2px] bg-color-3"></div>
             <div className="w-[15px] h-[2px] bg-color-3"></div>
           </div>
         )}
         {isOpen && (
-          <div className="close w-[24px] h-[24px] flex items-center sm:hidden justify-center relative object-cover" onClick={() => setIsOpen(false)}>
+          <div
+            className="close w-[24px] h-[24px] flex items-center sm:hidden justify-center relative object-cover"
+            onClick={() => setIsOpen(false)}
+          >
             <Image src="./assets/close.svg" fill={true} alt=""></Image>
           </div>
         )}
-
       </div>
       {isOpen && (
         <div className="w-full h-screen flex flex-col  pb-[70px]  fixed top-[60px] bg-color-1  justify-between sm:hidden">
           <div className="h-[338px] gap-[32px] w-[174px] flex flex-col ml-10 items-center justify-center ">
-              <div className="w-full cursor-pointer hover:text-color-0">
-            <Link href={"/"} onClick={() => setIsOpen(false)}>
-                <span className="font-fira-code font-medium text-[32px] text-color-2">#</span>
-                <span className={`${path === "/" ? "text-color-0" : "text-color-3"
-                  } font-fira-code font-medium text-[32px] `}>Home</span>
-            </Link>
-              </div>
-              <div className="w-full cursor-pointer hover:text-color-0">
-            <Link href={"/projects"} onClick={() => setIsOpen(false)}>
-                <span className="font-fira-code font-medium text-[32px] text-color-2">#</span>
-                <span className={`${path === "/projects" ? "text-color-0" : "text-color-3"
-                  } font-fira-code font-medium text-[32px] `}>Projects</span>
-            </Link>
-              </div>
-              <div className="w-ful cursor-pointer hover:text-color-0">
-            <Link href={"/about"} onClick={() => setIsOpen(false)}>
-                <span className="font-fira-code font-medium text-[32px] text-color-2">#</span>
-                <span className={`${path === "/about" ? "text-color-0" : "text-color-3"
-                  } font-fira-code font-medium text-[32px]  `}>About-me</span>
-            </Link>
-              </div>
+            <div className="w-full cursor-pointer hover:text-color-0">
+              <Link href={"/"} onClick={() => setIsOpen(false)}>
+                <span className="font-fira-code font-medium text-[32px] text-color-2">
+                  #
+                </span>
+                <span
+                  className={`${
+                    path === "/" ? "text-color-0" : "text-color-3"
+                  } font-fira-code font-medium text-[32px] `}
+                >
+                  Home
+                </span>
+              </Link>
+            </div>
+            <div className="w-full cursor-pointer hover:text-color-0">
+              <Link href={"/projects"} onClick={() => setIsOpen(false)}>
+                <span className="font-fira-code font-medium text-[32px] text-color-2">
+                  #
+                </span>
+                <span
+                  className={`${
+                    path === "/projects" ? "text-color-0" : "text-color-3"
+                  } font-fira-code font-medium text-[32px] `}
+                >
+                  Projects
+                </span>
+              </Link>
+            </div>
+            <div className="w-ful cursor-pointer hover:text-color-0">
+              <Link href={"/about"} onClick={() => setIsOpen(false)}>
+                <span className="font-fira-code font-medium text-[32px] text-color-2">
+                  #
+                </span>
+                <span
+                  className={`${
+                    path === "/about" ? "text-color-0" : "text-color-3"
+                  } font-fira-code font-medium text-[32px]  `}
+                >
+                  About-me
+                </span>
+              </Link>
+            </div>
           </div>
           <div className="w-full flex items-center justify-center">
             <div className="w-[208px] h-[64px] flex items-center justify-center gap-2">
@@ -107,12 +136,15 @@ const NavBare = () => {
                   <Image src="./assets/Github.svg" fill={true} alt=""></Image>
                 </div>
               </Link>
-              <Link target="_blank" href="https://www.linkedin.com/in/abdelbari-messah-60841a232/">
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/abdelbari-messah-60841a232/"
+              >
                 <div className="h-[64px] w-[64px] relative object-cover hover:scale-90 flex items-center justify-center">
                   <Image src="./assets/linkedin.svg" fill={true} alt=""></Image>
                 </div>
               </Link>
-              <Link href={"mailto:abdelbari.messah.dev@gmail.com"}>
+              <Link href={"mailto:amessah@student.1337.ma"}>
                 <div className="h-[64px] w-[64px] relative object-cover hover:scale-90 flex items-center justify-center">
                   <Image src="./assets/mail.svg" fill={true} alt=""></Image>
                 </div>

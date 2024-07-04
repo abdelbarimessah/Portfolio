@@ -487,7 +487,7 @@ function Home() {
                       </div>
                       <div className="">
                         <span className="font-fira-code  text-[12px] sm:text-[16px] text-color-3">
-                          abdelbari.messah.dev@gmail.com
+                          amessah@student.1337.ma
                         </span>
                       </div>
                     </div>

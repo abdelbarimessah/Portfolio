@@ -10,14 +10,18 @@ function Footer() {
             <div className="flex flex-col md:flex-row  justify-start items-start lg:items-center md:gap-[34px] gap-2">
               <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
                 <div className="relative w-[28px] h-[28px] flex items-center justify-center">
-                  <Image src="./assets/LogoPerNew.svg" fill={true} alt=""></Image>
+                  <Image
+                    src="./assets/LogoPerNew.svg"
+                    fill={true}
+                    alt=""
+                  ></Image>
                 </div>
                 <span className="font-fira-code font-semibold tracking-wider text-[16px] capitalize text-color-2">
                   Abdelbari
                 </span>
               </div>
               <span className="font-fira-code text-[16px] text-color-3">
-                abdelbari.messah.dev@gmail.com
+                amessah@student.1337.ma
               </span>
             </div>
             <div className="w-full flex items-start">
@@ -46,7 +50,7 @@ function Footer() {
                   <Image src="./assets/linkedin.svg" fill={true} alt=""></Image>
                 </div>
               </Link>
-              <Link href={"mailto:abdelbari.messah.dev@gmail.com"}>
+              <Link href={"mailto:amessah@student.1337.ma"}>
                 <div className="relative w-[32px] h-[32px] flex items-center justify-center cursor-pointer hover:scale-90 ">
                   <Image src="./assets/mail.svg" fill={true} alt=""></Image>
                 </div>
