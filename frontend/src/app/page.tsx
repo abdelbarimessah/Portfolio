@@ -15,28 +15,9 @@ function Home() {
 
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar bg-color-1">
-      {/* <div className="shap absolute w-[91px] h-[91px] border border-color-3 left-[96%] top-[40%]"></div>
-      <div className="shap absolute w-[155px] h-[155px] border border-color-3 top-[75%] left-[97%]"></div>
-      <div className="shap absolute top-[50%] -left-8">
-        <div className="w-[84px] h-[84px] flex items-center justify-center relative object-cover">
-          <Image src={"./assets/dotedLeft.svg"} alt="arrow" fill={true}></Image>
-        </div>
-      </div> */}
+
       <div className=" lg:w-[1025px] w-full px-14  xl:px-0 lg:h-[423px] relative  flex lg:flex-row flex-col items-center justify-center ">
-        {/* <div className="absolute top-[90px] left-[525px] z-0">
-          <div className="relative w-[155px] h-[155px] flex items-center justify-center">
-            <Image
-              src="./assets/rectangleLeftNew.svg"
-              fill={true}
-              alt=""
-            ></Image>
-          </div>
-        </div>
-        <div className="absolute top-[300px] left-[870px] z-50">
-          <div className="relative w-[70px] h-[70px] flex items-center justify-center">
-            <Image src="./assets/rectangleRight.svg" fill={true} alt=""></Image>
-          </div>
-        </div> */}
+
         <div className=" h-full w-full lg:w-[537px] flex flex-col gap-[32px] items-center justify-center">
           <div className="w-full h-full lg:h-[84px] ">
             <div className="w-full">
