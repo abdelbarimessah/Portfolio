@@ -9,7 +9,7 @@ const NavBare = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-color-2 w-full h-full flex items-center justify-center z-[2000]  ">
+    <div className=" w-full h-full flex items-center justify-center z-[2000]  ">
       <div className=" h-[61px] lg:w-[1024px] w-full lg:px-0 px-10 flex items-center justify-between  fixed top-0  bg-color-1">
         <Link href={"/"}>
           <div className="h-full flex items-center justify-center gap-[8px] cursor-pointer">
