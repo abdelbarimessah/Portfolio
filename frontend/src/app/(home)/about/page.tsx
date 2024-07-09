@@ -5,7 +5,7 @@ import Link from "next/link";
 function About() {
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar ">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 px-2">
         <div className=" xl:px-0 px-14 w-full lg:w-[1025px] h-[77px] flex items-start justify-start ">
           <div className="h-full w-[183px] gap-[14px] flex flex-col items-center justify-center">
             <div className="w-full flex">

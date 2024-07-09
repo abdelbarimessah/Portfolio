@@ -66,7 +66,7 @@ function Home() {
                 Currently working on
               </span>
               <span className="font-fira-code font-semibold text-[16px] text-color-0">
-                Portfolio
+                Matcha
               </span>
             </div>
           </div>
