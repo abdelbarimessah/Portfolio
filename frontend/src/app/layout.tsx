@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBare from "@/components/Bares/NavBare";
 import LeftLine from "@/components/Bares/LeftLine";
-import Head from "next/head";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +28,7 @@ export default function RootLayout({
             <NavBare />
           </div>
           {children}
+          <Analytics />
           <SpeedInsights />
         </div>
       </body>
