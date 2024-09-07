@@ -402,7 +402,7 @@ function Home() {
                 </div>
               </Link>
               <a
-                href={"http://www.abdelbari.me/assets/messah-fr.pdf"}
+                href={"http://www.abdelbari.me/assets/abdelbari_resume.pdf"}
                 target="_blank"
               >
                 <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-3">
