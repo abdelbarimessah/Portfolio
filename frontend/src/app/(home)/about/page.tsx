@@ -60,8 +60,8 @@ function About() {
             <div className="h-[413px] w-[343px] relative">
               <div className="w-full h-full flex items-center justify-end relative object-cover">
                 <Image
-                  src={"./assets/manimage1.svg"}
-                  alt="arrow"
+                  src={"./assets/myPhoto2.svg"}
+                  alt="myPhoto2"
                   fill={true}
                 ></Image>
               </div>

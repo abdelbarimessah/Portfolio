@@ -28,7 +28,8 @@ const config: Config = {
       // },
       colors:{
         'color-0' : '#FFFFFF',
-        'color-1' : '#282C33',
+        'color-1' : '#000',
+        // 'color-1' : '#282C33',
         'color-2' : '#92b9d5',
         // 'color-2' : '#C778DD',
         'color-3': '#ABB2BF',
