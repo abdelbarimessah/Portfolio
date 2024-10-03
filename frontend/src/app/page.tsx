@@ -56,8 +56,8 @@ function Home() {
           </div>
         </div>
         <div className=" w-full lg:w-[492px] flex items-center justify-center flex-col ">
-          <div className="relative w-full lg:w-[457px]  h-[386px] flex items-center justify-center  ">
-            <Image src="./assets/manImage.svg" fill={true} alt=""></Image>
+          <div className="relative w-full lg:w-[453px] h-[384px] flex items-center justify-center">
+            <Image src="./assets/myPhoto1.svg" fill={true} alt="myPhoto1"></Image>
           </div>
           <div className="sm:h-[37px] w-full sm:w-[402px] flex  items-center justify-start px-5  gap-[16px] border border-color-2">
             <div className="w-4 h-4 bg-color-2"></div>
@@ -421,8 +421,8 @@ function Home() {
           <div className="h-[413px] w-[343px] relative">
             <div className="w-full h-full flex items-center justify-end relative object-cover">
               <Image
-                src={"./assets/manimage1.svg"}
-                alt="arrow"
+                src={"./assets/myPhoto2.svg"}
+                alt="myPhoto2"
                 fill={true}
               ></Image>
             </div>
