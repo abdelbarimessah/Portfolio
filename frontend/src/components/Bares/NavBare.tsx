@@ -144,7 +144,7 @@ const NavBare = () => {
                   <Image src="./assets/linkedin.svg" fill={true} alt=""></Image>
                 </div>
               </Link>
-              <Link href={"mailto:amessah@student.1337.ma"}>
+              <Link href={"mailto:messahabdelbari1337@gmail.com"}>
                 <div className="h-[64px] w-[64px] relative object-cover hover:scale-90 flex items-center justify-center">
                   <Image src="./assets/mail.svg" fill={true} alt=""></Image>
                 </div>
