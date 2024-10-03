@@ -15,9 +15,7 @@ function Home() {
 
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar bg-color-1">
-
       <div className=" lg:w-[1025px] w-full px-14  xl:px-0 lg:h-[423px] relative  flex lg:flex-row flex-col items-center justify-center ">
-
         <div className=" h-full w-full lg:w-[537px] flex flex-col gap-[32px] items-center justify-center">
           <div className="w-full h-full lg:h-[84px] ">
             <div className="w-full">
@@ -57,7 +55,11 @@ function Home() {
         </div>
         <div className=" w-full lg:w-[492px] flex items-center justify-center flex-col ">
           <div className="relative w-full lg:w-[453px] h-[384px] flex items-center justify-center">
-            <Image src="./assets/myPhoto1.svg" fill={true} alt="myPhoto1"></Image>
+            <Image
+              src="./assets/myPhoto1.svg"
+              fill={true}
+              alt="myPhoto1"
+            ></Image>
           </div>
           <div className="sm:h-[37px] w-full sm:w-[402px] flex  items-center justify-start px-5  gap-[16px] border border-color-2">
             <div className="w-4 h-4 bg-color-2"></div>
@@ -468,7 +470,7 @@ function Home() {
                       </div>
                       <div className="">
                         <span className="font-fira-code  text-[12px] sm:text-[16px] text-color-3">
-                          amessah@student.1337.ma
+                          messahabdelbari1337@gmail.com
                         </span>
                       </div>
                     </div>

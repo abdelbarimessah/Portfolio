@@ -21,7 +21,7 @@ function Footer() {
                 </span>
               </div>
               <span className="font-fira-code text-[16px] text-color-3">
-                amessah@student.1337.ma
+                messahabdelbari1337@gmail.com
               </span>
             </div>
             <div className="w-full flex items-start">
@@ -50,7 +50,7 @@ function Footer() {
                   <Image src="./assets/linkedin.svg" fill={true} alt=""></Image>
                 </div>
               </Link>
-              <Link href={"mailto:amessah@student.1337.ma"}>
+              <Link href={"mailto:messahabdelbari1337@gmail.com"}>
                 <div className="relative w-[32px] h-[32px] flex items-center justify-center cursor-pointer hover:scale-90 ">
                   <Image src="./assets/mail.svg" fill={true} alt=""></Image>
                 </div>
