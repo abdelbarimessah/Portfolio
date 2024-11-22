@@ -158,6 +158,45 @@ const  Projects = () => {
               </div>
             </div>
           </div>
+          <div className="flex items-start justify-start flex-col w-[330px] h-[440px] border border-color-3">
+            <div className="w-full h-[175px] border-b border-color-3 relative  flex items-center justify-center object-cover">
+              <img src="./assets/seasonalOffer.png" alt="" />
+            </div>
+            <div className="w-full px-4 py-2 border-b border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                NextJS, Typescript, Tailwind, Shadcn/ui, Aceternity-ui, Figma,
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                Seasonal Offer
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  Web Application
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <LinkPreview
+                  url="https://mrapido.store/"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
+              </div>
+            </div>
+          </div>
           <div className="flex items-start justify-start flex-col w-[330px] h-[422px] border border-color-3">
             <div className="w-full h-[185px] border-b border-color-3 relative  flex items-center justify-center object-cover">
               <img src="./assets/inception.png" alt="" />
