@@ -223,7 +223,7 @@ function About() {
                 </div>
                 <div className="w-full">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
-                    Develop the digital solution for Enside's activities. Enside
+                    Develop the digital solution for Enside&apos;s activities. Enside
                     offers a fresh approach to project management, centered on
                     human connection and emotions.
                   </span>
