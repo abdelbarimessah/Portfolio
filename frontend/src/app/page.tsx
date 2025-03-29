@@ -294,7 +294,7 @@ function Home() {
                 Html / Css
               </span>
               <span className="font-fira-code text-[16px] text-color-3">
-                Tailwind
+                Tailwind Css
               </span>
             </div>
           </div>
@@ -337,7 +337,7 @@ function Home() {
               </span>
             </div>
           </div>
-          <div className="w-[192px] h-[150px] border border-color-3 ">
+          <div className="w-[192px] h-[200px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
                 Frameworks
@@ -355,6 +355,12 @@ function Home() {
               </span>
               <span className="font-fira-code text-[16px] text-color-3">
                 NestJs
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                React Native
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                Express js
               </span>
             </div>
           </div>

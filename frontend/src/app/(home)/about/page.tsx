@@ -218,14 +218,14 @@ function About() {
                 </div>
                 <div className="w-full">
                   <span className="font-fira-code font-medium text-[16px] text-color-3">
-                    October 2024 - present , Casablanca
+                    October 2024 - present • 6 months, Casablanca
                   </span>
                 </div>
                 <div className="w-full">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
-                    Develop the digital solution for Enside&apos;s activities. Enside
-                    offers a fresh approach to project management, centered on
-                    human connection and emotions.
+                    Develop the digital solution for Enside&apos;s activities.
+                    Enside offers a fresh approach to project management,
+                    centered on human connection and emotions.
                   </span>
                 </div>
               </div>
