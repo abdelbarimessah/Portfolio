@@ -272,7 +272,7 @@ function About() {
                     |
                   </span>
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
-                    Full-stack Intern
+                    Full-stack Developer Intern
                   </span>
                 </div>
                 <div className="w-full">
