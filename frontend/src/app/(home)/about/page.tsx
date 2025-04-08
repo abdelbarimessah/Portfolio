@@ -329,7 +329,7 @@ function About() {
                 </div>
                 <div className="w-full">
                   <span className="font-fira-code font-medium text-[16px] text-color-3">
-                    September 2021 - June 2023 • Beni-Mellal
+                    September 2022 - June 2023 • Beni-Mellal
                   </span>
                 </div>
                 <div className="w-full">
