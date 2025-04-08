@@ -314,7 +314,7 @@ function About() {
                 </div>
                 <div className="w-full">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
-                    1337 FUTER IS LOADING (42 network)
+                    1337 FUTURE IS LOADING (42 network)
                   </span>
                 </div>
               </div>
