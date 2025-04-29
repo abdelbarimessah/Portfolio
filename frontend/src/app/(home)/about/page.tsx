@@ -35,9 +35,8 @@ function About() {
                   foundation in computer science fundamentals.
                   <br /> <br />
                   Eager to leverage problem-solving skills and technical
-                  expertise in a fast-paced professional environment to
-                  contribute to the development of innovative software
-                  solutions.
+                  expertise and to contribute to the development of innovative
+                  software solutions.
                 </p>
               </div>
               <div className="w-full sm:flex-row flex-col flex items-start gap-4 sm:gap-12">
@@ -114,7 +113,7 @@ function About() {
                 Html / Css
               </span>
               <span className="font-fira-code text-[16px] text-color-3">
-                Tailwind
+                Tailwind Css
               </span>
             </div>
           </div>
@@ -157,7 +156,7 @@ function About() {
               </span>
             </div>
           </div>
-          <div className="w-[192px] h-[150px] border border-color-3 ">
+          <div className="w-[192px] h-[200px] border border-color-3 ">
             <div className="w-full h-[37px] border-b border-color-3 flex items-center pl-3 justify-start">
               <span className="font-fira-code font-semibold text-[16px] ">
                 Frameworks
@@ -175,6 +174,12 @@ function About() {
               </span>
               <span className="font-fira-code text-[16px] text-color-3">
                 NestJs
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                React Native
+              </span>
+              <span className="font-fira-code text-[16px] text-color-3">
+                Express js
               </span>
             </div>
           </div>
@@ -207,6 +212,34 @@ function About() {
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
+                    Free Pixel
+                  </span>
+                  <span className="font-fira-code font-medium text-[16px] text-color-3">
+                    |
+                  </span>
+                  <span className="font-fira-code font-medium text-[16px] text-color-0">
+                    Full-Stack and Mobile Developer
+                  </span>
+                </div>
+                <div className="w-full">
+                  <span className="font-fira-code font-medium text-[16px] text-color-3">
+                    March 2025 - present, Casablanca
+                  </span>
+                </div>
+                <div className="w-full">
+                  <span className="font-fira-code font-medium text-[16px] text-color-0">
+                    Build scalable digital products at FreePixel, merging
+                    full-stack agility with mobile precision to create
+                    emotionally resonant user experiences.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex items-center justify-center">
+              <div className="w-[1px] h-[130px] bg-color-2"></div>
+              <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
+                <div className="w-full flex items-start justify-start gap-3">
+                  <span className="font-fira-code font-medium text-[16px] text-color-0">
                     Enside (OCP GROUP)
                   </span>
                   <span className="font-fira-code font-medium text-[16px] text-color-3">
@@ -218,7 +251,7 @@ function About() {
                 </div>
                 <div className="w-full">
                   <span className="font-fira-code font-medium text-[16px] text-color-3">
-                    October 2024 - present • 6 months, Casablanca
+                    October 2024 - March 2025 • 6 months, Casablanca
                   </span>
                 </div>
                 <div className="w-full">

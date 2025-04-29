@@ -3,10 +3,8 @@ import Footer from "@/components/Bares/Footer";
 import { LinkPreview } from "@/components/ui/link-preview";
 import Image from "next/image";
 
-
-
 // export {pro}
-const  Projects = () => {
+const Projects = () => {
   const pro = [
     {
       title: "Philosophers",
@@ -34,8 +32,7 @@ const  Projects = () => {
     },
     {
       title: "FT_PTINTF",
-      description:
-        "This Project Is A Recode Of The printf() C Function",
+      description: "This Project Is A Recode Of The printf() C Function",
       link: "https://github.com/abdelbarimessah/ft_printf",
       tags: "C Language, Variadic functions",
     },
@@ -119,6 +116,85 @@ const  Projects = () => {
               </div>
             </div>
           </div>
+
+          <div className="flex items-start justify-start flex-col w-[330px] h-[435px] border border-color-3">
+            <div className="w-full bg-slate-600 h-[177px] border-b border-color-3 relative flex items-center justify-center object-cover">
+              <img src="./assets/moussem.png" alt="" />
+            </div>
+            <div className="w-full px-4 py-2 border-b border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                ReactJs Typescript TailwindCss Shadcn/Ui NextJs
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                  Moussem Moulay Abdellah Amghar
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  Web Application
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <LinkPreview
+                  url="https://moussem-moulay-abdellah.vercel.app/fr"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-start justify-start flex-col w-[330px] h-[420px] border border-color-3">
+            <div className="w-full bg-slate-600 h-[177px] border-b border-color-3 relative flex items-center justify-center object-cover">
+              <img src="./assets/freepixel.png" alt="" />
+            </div>
+            <div className="w-full px-4 py-2 border-b border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                reactjs typescript NextJs tailwindCss Shadcn/Ui
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                  Free Pixel
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  Company Web Application
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <LinkPreview
+                  url="https://free-pixel.vercel.app/"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
+              </div>
+            </div>
+          </div>
           <div className="flex items-start justify-start flex-col w-[330px] h-[391px] border border-color-3">
             <div className="w-full h-[190px] bg-slate-600  border-b border-color-3 relative flex items-center justify-center object-cover">
               <img src="./assets/irc.png" alt="" />
@@ -170,7 +246,7 @@ const  Projects = () => {
             <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
               <div className="w-full flex items-center justify-start">
                 <span className="font-fira-code text-color-0 text-[24px] font-medium">
-                Seasonal Offer
+                  Seasonal Offer
                 </span>
               </div>
               <div className="w-full flex items-center justify-start">
@@ -371,7 +447,6 @@ const  Projects = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default Projects;
-

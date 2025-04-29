@@ -9,9 +9,7 @@ import Link from "next/link";
 
 function Home() {
   const word = ["Front-End", "Back-End", "Full-Stack"];
-  const words = ` I’m interested in internship or job opportunities as a full-stack,
-  front-end, or back-end developer. However, if you have other
-  requests or questions, don’t hesitate to contact me.`;
+  const words = ` I'm currently open to collaboration, freelance projects, or interesting tech challenges. If you'd like to discuss opportunities, share ideas, or just connect, feel free to reach out—I'd love to hear from you!`;
 
   return (
     <div className=" h-full w-full flex flex-col gap-[100px] items-center justify-center top-[123px] relative no-scrollbar bg-color-1">
@@ -33,7 +31,7 @@ function Home() {
                 and{" "}
               </span>
               <span className="font-fira-code text-[25px] font-semibold text-color-2">
-                software developer{" "}
+                Mobile developer{" "}
               </span>
             </div>
           </div>
@@ -65,10 +63,10 @@ function Home() {
             <div className="w-4 h-4 bg-color-2"></div>
             <div className="flex sm:flex-row flex-col  sm:gap-[10px]  items-start sm:items-center justify-center">
               <span className="font-fira-code font-medium text-[16px] text-color-3">
-                Currently working on
+                Currently working in
               </span>
               <span className="font-fira-code font-semibold text-[16px] text-color-0">
-                Matcha
+                Free Pixel
               </span>
             </div>
           </div>
@@ -128,7 +126,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full flex-wrap flex lg:flex-row items-start justify-center gap-[16px]">
+        <div className="w-full flex-wrap flex lg:flex-row items-start justify-start gap-[16px]">
           <div className="flex items-start justify-start flex-col w-[330px] h-[440px] border border-color-3">
             <div className="w-full h-[190px] border-b border-color-3 relative flex items-center justify-center object-cover">
               <Image
@@ -172,6 +170,126 @@ function Home() {
               </div>
             </div>
           </div>
+
+          <div className="flex items-start justify-start flex-col w-[330px] h-[435px] border border-color-3">
+            <div className="w-full bg-slate-600 h-[177px] border-b border-color-3 relative flex items-center justify-center object-cover">
+              <img src="./assets/moussem.png" alt="" />
+            </div>
+            <div className="w-full px-4 py-2 border-b border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                ReactJs Typescript TailwindCss Shadcn/Ui NextJs
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                  Moussem Moulay Abdellah Amghar
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  Web Application
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <LinkPreview
+                  url="https://moussem-moulay-abdellah.vercel.app/fr"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-start justify-start flex-col w-[330px] h-[420px] border border-color-3">
+            <div className="w-full bg-slate-600 h-[177px] border-b border-color-3 relative flex items-center justify-center object-cover">
+              <img src="./assets/freepixel.png" alt="" />
+            </div>
+            <div className="w-full px-4 py-2 border-b border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                reactjs typescript NextJs tailwindCss Shadcn/Ui
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                  Free Pixel
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  Company Web Application
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <LinkPreview
+                  url="https://free-pixel.vercel.app/"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-start justify-start flex-col w-[330px] h-[440px] border border-color-3">
+            <div className="w-full h-[175px] border-b border-color-3 relative  flex items-center justify-center object-cover">
+              <img src="./assets/seasonalOffer.png" alt="" />
+            </div>
+            <div className="w-full px-4 py-2 border-b border-color-3">
+              <span className="font-fira-code text-[16px] text-color-3">
+                NextJS, Typescript, Tailwind, Shadcn/ui, Aceternity-ui, Figma,
+              </span>
+            </div>
+            <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-0 text-[24px] font-medium">
+                  Seasonal Offer
+                </span>
+              </div>
+              <div className="w-full flex items-center justify-start">
+                <span className="font-fira-code text-color-3 text-[16px]">
+                  Web Application
+                </span>
+              </div>
+              <div className="w-full flex items-center  justify-start">
+                <LinkPreview
+                  url="https://mrapido.store/"
+                  className="font-fira-code text-[16px] font-medium text-color-0"
+                >
+                  <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">
+                    Link
+                    <div className="w-[15px] h-[15px] mt-1 flex items-center justify-center relative object-cover">
+                      <Image
+                        src={"./assets/link.svg"}
+                        alt="arrow"
+                        fill={true}
+                      ></Image>
+                    </div>
+                  </div>
+                </LinkPreview>
+              </div>
+            </div>
+          </div>
+
           <div className="flex items-start justify-start flex-col w-[330px] h-[391px] border border-color-3">
             <div className="w-full bg-slate-600 h-[190px] border-b border-color-3 relative flex items-center justify-center object-cover">
               <img src="./assets/irc.png" alt="" />
@@ -211,6 +329,7 @@ function Home() {
               </div>
             </div>
           </div>
+
           <div className="flex items-start justify-start flex-col w-[330px] h-[422px] border border-color-3">
             <div className="w-full h-[185px] border-b border-color-3 relative  flex items-center justify-center object-cover">
               <img src="./assets/inception.png" alt="" />
@@ -392,8 +511,8 @@ function Home() {
                 foundation in computer science fundamentals.
                 <br /> <br />
                 Eager to leverage problem-solving skills and technical expertise
-                in a fast-paced professional environment to contribute to the
-                development of innovative software solutions.
+                and to contribute to the development of innovative software
+                solutions.
               </p>
             </div>
             <div className="w-full sm:flex-row flex-col flex items-start gap-4 sm:gap-12">

@@ -60,7 +60,8 @@ function Footer() {
         </div>
         <div className=" w-full flex items-center justify-center ">
           <span className="font-fira-code text-[16px] text-color-3">
-            © Copyright 2024. Made by Abdelari
+            © Copyright {new Date().getFullYear()} - Made by Abdelari . All
+            Right Reserved
           </span>
         </div>
       </div>
