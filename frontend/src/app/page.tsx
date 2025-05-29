@@ -193,7 +193,7 @@ function Home() {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://moussem-moulay-abdellah.vercel.app/fr"
+                  url="https://www.moussemmoulayabdellah.com/en"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">

@@ -197,9 +197,9 @@ function About() {
             </span>
           </div>
         </div>
-        <div className="w-full flex flex-col items-start justify-start gap-[60px] ">
-          <div className="flex flex-col gap-5 ">
-            <div className="w-full flex gap-1">
+        <div className="w-full flex flex-col items-start justify-start gap-[60px]">
+          <div className="flex flex-col  ">
+            <div className="w-full flex gap-1 pb-8">
               <span className="font-fira-code font-medium text-[24px] text-color-2">
                 #{" "}
               </span>
@@ -207,8 +207,9 @@ function About() {
                 Experience
               </span>
             </div>
-            <div className="w-full flex items-center justify-center">
-              <div className="w-[1px] h-[130px] bg-color-2"></div>
+
+            <div className="w-full  pb-7 flex items-center justify-center  border-color-2 border-l-[1px] relative">
+              <div className="w-[12px] h-[12px] bg-color-2 rounded-full absolute top-0 left-[-7px]"></div>
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
@@ -235,8 +236,9 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-center justify-center">
-              <div className="w-[1px] h-[130px] bg-color-2"></div>
+            <div className="w-full  pb-7 flex items-center justify-center  border-color-2 border-l-[1px] relative">
+              <div className="w-[12px] h-[12px] bg-color-2 rounded-full absolute top-0 left-[-7px]"></div>
+
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
@@ -263,8 +265,9 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-center justify-center">
-              <div className="w-[1px] h-[170px] bg-color-2"></div>
+            <div className="w-full  pb-7 flex items-center justify-center  border-color-2 border-l-[1px] relative">
+              <div className="w-[12px] h-[12px] bg-color-2 rounded-full absolute top-0 left-[-7px]"></div>
+
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
@@ -294,8 +297,9 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-center justify-center">
-              <div className="w-[1px] h-[120px] bg-color-2"></div>
+            <div className="w-full  pb-2 flex items-center justify-center  border-color-2 border-l-[1px] relative">
+              <div className="w-[12px] h-[12px] bg-color-2 rounded-full absolute top-0 left-[-7px]"></div>
+
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
@@ -323,17 +327,17 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-5 ">
+          <div className="flex flex-col ">
             <div className="w-full flex gap-1">
               <span className="font-fira-code font-medium text-[24px] text-color-2">
                 #{" "}
               </span>
-              <span className="font-fira-code  font-medium text-[24px] text-color-0">
+              <span className="font-fira-code pb-8 font-medium text-[24px] text-color-0">
                 Education
               </span>
             </div>
-            <div className="w-full flex items-center justify-center">
-              <div className="w-[1px] h-[100px] bg-color-2"></div>
+            <div className="w-full  pb-7 flex items-center justify-center  border-color-2 border-l-[1px] relative">
+              <div className="w-[12px] h-[12px] bg-color-2 rounded-full absolute top-0 left-[-7px]"></div>
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
@@ -352,8 +356,8 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-center justify-center">
-              <div className="w-[1px] h-[100px] bg-color-2"></div>
+            <div className="w-full  pb-7 flex items-center justify-center  border-color-2 border-l-[1px] relative">
+              <div className="w-[12px] h-[12px] bg-color-2 rounded-full absolute top-0 left-[-7px]"></div>
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
@@ -372,8 +376,8 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-center justify-center">
-              <div className="w-[1px] h-[100px] bg-color-2"></div>
+            <div className="w-full  pb-7 flex items-center justify-center  border-color-2 border-l-[1px] relative">
+              <div className="w-[12px] h-[12px] bg-color-2 rounded-full absolute top-0 left-[-7px]"></div>
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
@@ -393,8 +397,8 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-center justify-center">
-              <div className="w-[1px] h-[100px] bg-color-2"></div>
+            <div className="w-full  pb-3flex items-center justify-center  border-color-2 border-l-[1px] relative">
+              <div className="w-[12px] h-[12px] bg-color-2 rounded-full absolute top-0 left-[-7px]"></div>
               <div className="w-full flex flex-col pl-5 gap-2 justify-center items-start">
                 <div className="w-full flex items-start justify-start gap-3">
                   <span className="font-fira-code font-medium text-[16px] text-color-0">
