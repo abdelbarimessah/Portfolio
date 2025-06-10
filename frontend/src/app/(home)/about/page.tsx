@@ -28,7 +28,7 @@ function About() {
             <div className=" lg:h-[413px] w-full lg:w-[515px] pb-24 gap-[27px] flex flex-col items-center justify-center">
               <div className="w-full">
                 <p className="font-fira-code text-[16px] text-color-3">
-                  Hello, i’m Abdelbari MESSAH
+                  Hello, i&apos;m Abdelbari MESSAH
                   <br /> <br />
                   I m Entry-Level Software Engineer with a passion for software
                   development, Front-End and Back-End development and a strong

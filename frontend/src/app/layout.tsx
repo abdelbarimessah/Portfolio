@@ -3,8 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBare from "@/components/Bares/NavBare";
 import LeftLine from "@/components/Bares/LeftLine";
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+import dynamic from "next/dynamic";
+
+const CustomCursor = dynamic(() => import("@/components/ui/CustomCursor"), {
+  ssr: false,
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +28,7 @@ export default function RootLayout({
       <link rel="icon" href="/assets/favicon.ico" sizes="any" />
       <body className="no-scrollbar overflow-x-hidden  flex flex-col w-screen min-h-screen relative">
         <div className="flex flex-col flex-1 bg-color-1">
+          <CustomCursor />
           <div className="flex items-center justify-center w-full absolute top-0 ">
             <LeftLine />
             <NavBare />
