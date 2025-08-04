@@ -41,7 +41,7 @@ function About() {
               </div>
               <div className="w-full sm:flex-row flex-col flex items-start gap-4 sm:gap-12">
                 <a
-                  href={"http://www.abdelbari.me/assets/abdelbari_resume.pdf"}
+                  href={"http://www.abdelbari.site/assets/abdelbari_resume.pdf"}
                   target="_blank"
                 >
                   <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-2">

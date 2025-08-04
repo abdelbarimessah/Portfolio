@@ -19,7 +19,7 @@ export default function LeftLine() {
             <Image src="./assets/linkedin.svg" fill={true} alt=""></Image>
           </div>
         </Link>
-        <Link href={"mailto:messahabdelbari1337@gmail.com"}>
+        <Link href={"mailto:abdelbari.amessah@gmail.com"}>
           <div className="relative w-[32px] h-[32px] flex items-center justify-center hover:scale-90 cursor-pointer">
             <Image src="./assets/mail.svg" fill={true} alt=""></Image>
           </div>

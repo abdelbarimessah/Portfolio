@@ -324,7 +324,7 @@ const Projects = () => {
             <div className="w-full flex flex-col items-start gap-[16px] px-[16px] py-[10px] justify-start">
               <div className="w-full flex items-center justify-start">
                 <span className="font-fira-code text-color-0 text-[24px] font-medium">
-                  Abdelbari.me
+                  Abdelbari.site
                 </span>
               </div>
               <div className="w-full flex items-center justify-start">
@@ -334,7 +334,7 @@ const Projects = () => {
               </div>
               <div className="w-full flex items-center  justify-start">
                 <LinkPreview
-                  url="https://www.abdelbari.me/"
+                  url="https://www.abdelbari.site/"
                   className="font-fira-code text-[16px] font-medium text-color-0"
                 >
                   <div className="h-[37px] w-[109px] gap-3 flex items-center justify-center border border-color-2 cursor-pointer hover:border-color-3">

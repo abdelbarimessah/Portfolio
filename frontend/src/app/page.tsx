@@ -529,7 +529,7 @@ function Home() {
                 </div>
               </Link>
               <a
-                href={"http://www.abdelbari.me/assets/abdelbari_resume.pdf"}
+                href={"http://www.abdelbari.site/assets/abdelbari_resume.pdf"}
                 target="_blank"
               >
                 <div className="w-[170px] h-[37px] cursor-pointer hover:border-color-3 gap-5 border border-color-2 flex items-center justify-between px-3">
@@ -595,7 +595,7 @@ function Home() {
                       </div>
                       <div className="">
                         <span className="font-fira-code  text-[12px] sm:text-[16px] text-color-3">
-                          messahabdelbari1337@gmail.com
+                          abdelbari.amessah@gmail.com
                         </span>
                       </div>
                     </div>
